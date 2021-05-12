@@ -1,0 +1,93 @@
+Employee Name,Date,Time,Product Name,Quantity,Location,Latitude,Longitude,Price,Amount
+Michael Wanjala Simiyu,13/4/2021,10:03.19AM,LEXUS 247SC,2.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,660.0,1320.0
+Michael Wanjala Simiyu,13/4/2021,10:03.19AM,ESCORT 19EC,1.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,350.0,350.0
+Eliud Kibet Taurus,9/3/2021,10:28.30AM,RANGER 480EC,5.0,"Mombasa Road, Mariakani, Kilifi County",-3.864282,39.474076,760.0,3800.0
+Kipkemoi Thomas Bett,10/3/2021,12:04.08AM,HUMIPOWER,36.0,"A104, Nakuru County, Kenya",-0.1194206,35.6770229,630.0,22680.0
+Michael Wanjala Simiyu,10/3/2021,12:35.13AM,UNDERTAKER 480EC,2.0,"Unnamed Road, Busia County, Kenya",0.737079,34.3196699,2320.0,4640.0
+Simon Kuria Kamau,11/3/2021,11:41.06AM,PENTAGON 50 EC,18.0,"Kaplong - Narok - Maai Road, Narok County, Kenya",-1.1006862,36.1783298,2000.0,36000.0
+Dennis Karani Wanjiku,12/3/2021,10:31.44AM,Catapult 480SL,2.0,"Unnamed Road, Nakuru County, Kenya",-0.7446998,36.5258353,2920.0,5840.0
+Eliud Kibet Taurus,12/3/2021,11:49.56AM,OPTIMIZER,1.0,"Kenya, Mtwapa, Kilifi County",-3.927312,39.7410449,1870.0,1870.0
+Eliud Kibet Taurus,12/3/2021,11:49.56AM,INTEGRA,1.0,"Kenya, Mtwapa, Kilifi County",-3.927312,39.7410449,120.0,120.0
+Joseph Nthuli Musembi,13/3/2021,10:39.59AM,RANGER 480EC,12.0,"Casuarina Road, Malindi, Kilifi County",-3.2191133,40.1172165,1370.0,16440.0
+Simon Kuria Kamau,15/3/2021,10:50.56AM,Catapult 480SL,30.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.0942171,36.091209,610.0,18300.0
+Simon Kuria Kamau,15/3/2021,10:50.56AM,PENTAGON 50 EC,10.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.0942171,36.091209,2000.0,20000.0
+Eliud Kibet Taurus,17/3/2021,2:54.45PM,ABSOLUTE 375SC,1.0,"Unnamed Road, Kilifi County, Kenya",-3.9181221,39.7406192,1970.0,1970.0
+,19/3/2021,1:16.47PM,Bentagran Top 240EC,6.0,"Unnamed Road, Nairobi, Machakos County",-1.419347888046595,36.94922516953344,220.0,1320.0
+Dennis Karani Wanjiku,22/3/2021,10:38.52AM,Governor 580SE,4.0,"Unnamed Road, Nakuru County, Kenya",-0.8050342,36.2137498,2090.0,8360.0
+Simon Kuria Kamau,22/3/2021,1:58.32PM,Catapult 480SL,10.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.095783,36.0837349,610.0,6100.0
+Simon Kuria Kamau,22/3/2021,1:58.32PM,PENTAGON 50 EC,4.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.095783,36.0837349,2000.0,8000.0
+Michael Wanjala Simiyu,27/3/2021,10:54.41AM,Governor 580SE,1.0,"Tulienge-Cheptais Road, Bungoma County, Kenya",0.7934142,34.4567351,2090.0,2090.0
+Michael Wanjala Simiyu,27/3/2021,10:54.41AM,Catapult 480SL,1.0,"Tulienge-Cheptais Road, Bungoma County, Kenya",0.7934142,34.4567351,610.0,610.0
+Michael Wanjala Simiyu,30/3/2021,1:09.40PM,Governor 580SE,2.0,"Unnamed Road, Lubao, Kakamega County",0.3373563,34.8132557,2090.0,4180.0
+,30/3/2021,1:34.59PM,Governor 580SE,4.0,"Unnamed Road, Trans-Nzoia County, Kenya",1.1613072,34.9558423,10100.0,40400.0
+Michael Wanjala Simiyu,7/4/2021,11:17.56AM,Governor 580SE,4.0,"A104, Bungoma, Bungoma County",0.5925085,34.5528228,2090.0,8360.0
+,7/4/2021,4:17.20PM,KUNGU NIL 200SL,200.0,"Race Course Road, City Square, Nairobi",-1.2832263,36.8317088,100.0,20000.0
+,8/4/2021,3:42.20PM,GREENLIFE STAR (2in1) BATTERY SPRAYER,6.0,"90100, Mbolu Malu Road, Machakos",-1.5187225,37.2691448,7230.0,43380.0
+Michael Wanjala Simiyu,10/4/2021,08:37.34AM,Governor 580SE,1.0,"2, Bungoma, Bungoma County",0.5654828,34.5619817,10100.0,10100.0
+Michael Wanjala Simiyu,10/4/2021,08:37.34AM,Governor 580SE,3.0,"2, Bungoma, Bungoma County",0.5654828,34.5619817,2090.0,6270.0
+Dennis Karani Wanjiku,10/4/2021,09:31.56AM,ABSOLUTE 375SC,3.0,"A104, Nakuru County, Kenya",-0.856585,36.5504902,7590.0,22770.0
+,10/4/2021,10:35.00AM,Governor 580SE,100.0,"Ziwa Machine Road, Uasin Gishu County, Kenya",0.8258544,35.2225741,2090.0,209000.0
+,10/4/2021,10:35.00AM,Governor 580SE,100.0,"Ziwa Machine Road, Uasin Gishu County, Kenya",0.8258544,35.2225741,10100.0,1010000.0
+,11/4/2021,10:43.51AM,COMMANDER 240EC,10.0,"Hatheru Road, Maziwa, Nairobi",-1.2920122,36.7575403,390.0,3900.0
+Dennis Karani Wanjiku,12/4/2021,09:54.43AM,Catapult 480SL,12.0,"Unnamed Road, Nakuru County, Kenya",-0.7269463,36.4765015,610.0,7320.0
+Michael Wanjala Simiyu,12/4/2021,11:42.22AM,Governor 580SE,4.0,"924, Moi Avenue, Bungoma",0.5666594,34.560706,10100.0,40400.0
+Michael Wanjala Simiyu,13/4/2021,10:03.19AM,TRINITY GOLD 452WP,1.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,2000.0,2000.0
+Michael Wanjala Simiyu,13/4/2021,2:03.43PM,Governor 580SE,60.0,"A1, Kakamega County, Kenya",0.3371333,34.8203617,2090.0,125400.0
+Simon Kuria Kamau,14/4/2021,1:02.37PM,COMPLIANT 560SC,2.0,"Unnamed Road, Narok, Narok County",-1.087375,35.87426,3650.0,7300.0
+Simon Kuria Kamau,14/4/2021,1:02.37PM,MILESTONE 250SC,1.0,"Unnamed Road, Narok, Narok County",-1.087375,35.87426,9300.0,9300.0
+Dennis Karani Wanjiku,16/4/2021,06:59.06AM,TAURUS 500SP,3.0,"Nakuru - Nairobi Road, Nakuru County, Kenya",-0.7581089,36.4788675,6380.0,19140.0
+Michael Wanjala Simiyu,20/4/2021,3:26.16PM,COMMANDER 240EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.750536,34.6813308,2920.0,2920.0
+Simon Kuria Kamau,22/4/2021,5:29.28PM,Governor 580SE,2.0,"Kaplong - Narok - Maai Road, Narok, Narok County",-1.0898322,35.8792783,39200.0,78400.0
+Michael Wanjala Simiyu,26/4/2021,12:32.06AM,Governor 580SE,2.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,2090.0,4180.0
+Michael Wanjala Simiyu,26/4/2021,12:32.06AM,Goldchance Super Flowers & Fruits,1.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,380.0,380.0
+Michael Wanjala Simiyu,26/4/2021,12:32.06AM,PROFILE 440EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,270.0,270.0
+Bernard Kimani Nyambura,29/4/2021,11:53.09AM,Governor 580SE,2.0,"1649, Mburu Gichua Rd, Biashara",-0.2862827,36.0757758,39200.0,78400.0
+Marion Jones Cheroitich,29/4/2021,11:57.45AM,AGROMINE 860SL,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,670.0,4020.0
+Marion Jones Cheroitich,29/4/2021,11:57.45AM,INTEGRA,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,220.0,1320.0
+Marion Jones Cheroitich,29/4/2021,11:57.45AM,Bentagran Top 240EC,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,220.0,1320.0
+Bernard Kimani Nyambura,30/4/2021,12:03.55AM,Governor 580SE,2.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,10100.0,20200.0
+Bernard Kimani Nyambura,30/4/2021,12:03.55AM,Governor 580SE,2.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,10100.0,20200.0
+Bernard Kimani Nyambura,30/4/2021,12:30.40AM,Governor 580SE,10.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,2090.0,20900.0
+Bernard Kimani Nyambura,4/5/2021,1:07.09PM,LAVENDER TOTAL,15.0,"C57, Nakuru County, Kenya",-0.4347352,35.9705162,140.0,2100.0
+Bernard Kimani Nyambura,4/5/2021,1:07.28PM,Governor 580SE,10.0,"C57, Nakuru County, Kenya",-0.4347352,35.9705162,2090.0,20900.0
+Michael Wanjala Simiyu,4/5/2021,1:25.30PM,Governor 580SE,1.0,"Unnamed Road, Busia County, Kenya",0.4032376,34.3541089,10100.0,10100.0
+,4/5/2021,1:33.52PM,ABSOLUTE 375SC,6.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,820.0,4920.0
+,4/5/2021,1:33.52PM,INTEGRA,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,220.0,5280.0
+,4/5/2021,1:33.52PM,INTEGRA,12.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,120.0,1440.0
+,4/5/2021,1:33.52PM,KUNGU NIL 200SL,100.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,100.0,10000.0
+,4/5/2021,1:33.52PM,KUNGU NIL 200SL,36.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,650.0,23400.0
+,4/5/2021,1:33.52PM,PANTHENON 100CS,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,700.0,16800.0
+,4/5/2021,1:33.52PM,TRINITY GOLD 452WP,12.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,225.0,2700.0
+,4/5/2021,1:33.52PM,UNDERTAKER 480EC,48.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,2320.0,111360.0
+,4/5/2021,1:33.52PM,UNDERTAKER 480EC,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,530.0,12720.0
+,4/5/2021,1:33.52PM,UNDERTAKER 480EC,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,320.0,7680.0
+,4/5/2021,2:14.45PM,EMERALD 200SL,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,240.0,1440.0
+,4/5/2021,2:14.45PM,RANGER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,1370.0,8220.0
+,4/5/2021,2:14.45PM,ESCORT 19EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,1390.0,8340.0
+,4/5/2021,2:14.45PM,NAVIGATOR 100SC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,230.0,2760.0
+,4/5/2021,2:14.45PM,NAVIGATOR 100SC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,400.0,4800.0
+,4/5/2021,2:14.45PM,UNDERTAKER 480EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,530.0,6360.0
+,4/5/2021,2:14.45PM,UNDERTAKER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,2320.0,13920.0
+,4/5/2021,2:14.45PM,UNDERTAKER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,320.0,1920.0
+,4/5/2021,2:14.45PM,ESCORT 19EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,350.0,4200.0
+,4/5/2021,2:14.45PM,ESCORT 19EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,630.0,7560.0
+,4/5/2021,2:14.45PM,PANTHENON 100CS,24.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,700.0,16800.0
+,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,100.0,1200.0
+,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,360.0,4320.0
+,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,650.0,7800.0
+,4/5/2021,2:14.45PM,RANGER 480EC,18.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,190.0,3420.0
+,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,430.0,3440.0
+,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,430.0,3440.0
+,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,760.0,6080.0
+,4/5/2021,2:14.45PM,EMERALD 200SL,10.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,440.0,4400.0
+Michael Wanjala Simiyu,5/5/2021,08:31.47AM,ESCORT 19EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7982498,34.7095957,1390.0,1390.0
+Michael Wanjala Simiyu,5/5/2021,08:31.47AM,INTEGRA,1.0,"Unnamed Road, Bungoma County, Kenya",0.7982498,34.7095957,420.0,420.0
+,6/5/2021,12:34.40AM,KUNGU NIL 200SL,100.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,100.0,10000.0
+,6/5/2021,12:34.40AM,KUNGU NIL 200SL,25.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,360.0,9000.0
+,6/5/2021,12:34.40AM,EMERALD 200SL,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,240.0,2880.0
+,6/5/2021,12:34.40AM,EMERALD 200SL,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,440.0,5280.0
+,6/5/2021,12:34.40AM,RANGER 480EC,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,190.0,2280.0
+,6/5/2021,12:34.40AM,UNDERTAKER 480EC,72.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,2320.0,167040.0
+,6/5/2021,12:34.40AM,UNDERTAKER 480EC,24.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,530.0,12720.0
+Michael Wanjala Simiyu,8/5/2021,3:17.39PM,PROFILE 440EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7877357,34.6661223,1240.0,1240.0
+Michael Wanjala Simiyu,8/5/2021,3:18.14PM,COMMANDER 240EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7877357,34.6661223,2920.0,2920.0
