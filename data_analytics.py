@@ -16,8 +16,7 @@ from folium import plugins
 from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from branca.element import Template, MacroElement
-import urllib.request
-import bz2
+from datetime import datetime, timedelta
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -52,16 +51,21 @@ data_ch.sort_values(by='Date',inplace=True, ascending=True)
 data_ch['TSA Name']  = data_ch.iloc[:, 7] + ' ' + data_ch.iloc[:, 8]
 
 data_ch2 = data_ch.iloc[:, [0,1,2,10,3,4,5,6,9]]
-data_ch2['Order'] = data_ch2['Order'].astype(float)
+
+
+data_ch2['Order'] = pd.to_numeric(data_ch2['Order'], errors='coerce')
+
+data_ch2['Order'] = data_ch2['Order'].astype('int')
 data_ch2['Latitude'] = data_ch2['Latitude'].astype(float)
 data_ch2['Longitude'] = data_ch2['Longitude'].astype(float)
 
 total_per_tsa=data_ch2.groupby(['TSA Name'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['Order'], ascending=False)
 
 total_per_region=data_ch2.groupby(['Region'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['Order'], ascending=False)
+
 total_per_county=data_ch2.groupby(['County'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['Order'], ascending=False)
-total_per_county
-total_per_county['Order'] = total_per_county['Order'].astype(float)
+
+total_per_county['Order'] = total_per_county['Order'].astype(int)
 total_per_county.to_csv('data_analytics_county.csv',index=False)
 
 
@@ -74,9 +78,12 @@ public_health_daily=public_health.groupby(['Date'], as_index=False).agg({'Order'
 public_health_daily
 
 total_ord = data_ch2.loc[:, 'Order']
+
 total_public_h = public_health.loc[:, 'Order']
+
 total_order = total_ord.sum(axis=0)
 total_public_health = total_public_h.sum(axis=0)
+
 
 trial_data = pd.read_csv('https://raw.githubusercontent.com/emgeek-gs/greenlife/main/assets/locationproducts2.csv')
 
@@ -180,7 +187,7 @@ template = """
 <body>
 <div id='maplegend' class='maplegend'
     style='position: absolute; z-index:9999; border:0px; background-color:rgba(255, 255, 255, 0.8);
-     border-radius:6px; padding: 10px; font-size:25px; left: 0px; top: 0px;'>
+     border-radius:6px; padding: 10px; font-size:25px; left: 40px; top: 0px;'>
 
 <div class='legend-title'>TSA Orders per County</div>
 
@@ -188,7 +195,7 @@ template = """
 
 <div id='maplegend' class='maplegend'
     style='position: absolute; z-index:9999; border:2px solid grey; background-color:rgba(255, 255, 255, 0.8);
-     border-radius:6px; padding: 10px; font-size:14px; right: 20px; top: 20px;'>
+     border-radius:6px; padding: 10px; font-size:14px; right: 20px; bottom: 20px;'>
 
 <div class='legend-title'>Legend (Kshs)<br></div>
 <div class='legend-scale'>
@@ -338,18 +345,28 @@ unique_product
 employee_name_uq = employee_name.sort_values().unique()
 
 total_amount = amount.sum(axis=0)
+
 units_sold = quantity.sum(axis=0)
 units_sold
 m2 = folium.Map((0.04626, 37.65587), tiles=None, zoom_start=6)
 
 folium.TileLayer(tiles='https://api.mapbox.com/styles/v1/emmanuelnzyoka/ckiyknitw6tcx1al28jnkbqyk/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZW1tYW51ZWxuenlva2EiLCJhIjoiY2swYzA5MTVqMHgweTNsbWR6cTc1OXp3bSJ9.lzaPgndzbQq014PHdgkIsg', name='Base Map',attr='Emmanuel Nzyoka').add_to(m2)
+fdata = []
+for _, d in data_ch2.groupby('Date'):
+   fdata.append([[row['Latitude'], row['Longitude'], row['Order']] for _, row in d.iterrows()])
+fdata
+time_index = [
+    (datetime.now() + k * timedelta(1)).strftime("%Y-%m-%d") for k in range(len(data_ch2.groupby('Date')))
+]
 
-heat_data2 = [[row['Latitude'],row['Longitude']] for index, row in data_ch2.iterrows()]
-
-HeatMap(heat_data2, name = "Heat Map").add_to(m2)
-marker_cluster = MarkerCluster(heat_data2,name = "Cluster Map")
+hm = plugins.HeatMapWithTime(fdata, index=time_index, auto_play=True, max_opacity=0.7)
+# heat_data2 = [[row['Latitude'],row['Longitude']] for index, row in data_ch2.iterrows()]
+#hm = plugins.HeatMapWithTime(fdata, auto_play=True,max_opacity=0.8)
+hm.add_to(m2)
+# HeatMap(heat_data2, name = "Heat Map").add_to(m2)
+# marker_cluster = MarkerCluster(heat_data2,name = "Cluster Map")
 # Add marker cluster to map
-marker_cluster.add_to(m2)
+# marker_cluster.add_to(m2)
 folium.LayerControl().add_to(m2)
 
 template = """
@@ -384,9 +401,9 @@ template = """
 <body>
 <div id='maplegend' class='maplegend'
     style='position: absolute; z-index:9999; border:0px; background-color:rgba(255, 255, 255, 0.8);
-     border-radius:6px; padding: 10px; font-size:25px; left: 0px; top: 0px;'>
+     border-radius:6px; padding: 10px; font-size:25px; left: 40px; top: 0px;'>
 
-<div class='legend-title'>HeatMap and Clustermap</div>
+<div class='legend-title'>Orders Distribution Timeseries</div>
 
 </div>
 
@@ -445,23 +462,101 @@ m = folium.Map((0.04626, 37.65587), tiles=None, zoom_start=6)
 
 folium.TileLayer(tiles='https://api.mapbox.com/styles/v1/emmanuelnzyoka/ckiyknitw6tcx1al28jnkbqyk/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZW1tYW51ZWxuenlva2EiLCJhIjoiY2swYzA5MTVqMHgweTNsbWR6cTc1OXp3bSJ9.lzaPgndzbQq014PHdgkIsg', name='Base Map',attr='Emmanuel Nzyoka').add_to(m)
 
-mcg = folium.plugins.MarkerCluster(control=False)
-m.add_child(mcg)
-
-g1 = folium.plugins.FeatureGroupSubGroup(mcg, "Heat Map")
-m.add_child(g1)
-
-g2 = folium.plugins.FeatureGroupSubGroup(mcg, "Clustermap")
-m.add_child(g2)
 heat_data = [[row['Latitude'],row['Longitude']] for index, row in data_1.iterrows()]
 
-HeatMap(heat_data, name = "Heat Map").add_to(g1)
+HeatMap(heat_data, name = "Heat Map").add_to(m)
 marker_cluster = MarkerCluster(heat_data,name = "Cluster Map")
 # Add marker cluster to map
-marker_cluster.add_to(g2)
-folium.LayerControl(collapsed=False).add_to(m)
+marker_cluster.add_to(m)
+folium.LayerControl().add_to(m)
+
+template3 = """
+{% macro html(this, kwargs) %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( "#maplegend" ).draggable({
+                    start: function (event, ui) {
+                        $(this).css({
+                            right: "auto",
+                            top: "auto",
+                            bottom: "auto"
+                        });
+                    }
+                });
+});
+
+  </script>
+</head>
+<body>
+<div id='maplegend' class='maplegend'
+    style='position: absolute; z-index:9999; border:0px; background-color:rgba(255, 255, 255, 0.8);
+     border-radius:6px; padding: 10px; font-size:25px; left: 40px; top: 0px;'>
+
+<div class='legend-title'>Heatmap and Clustermap of Product Deliveries</div>
+
+</div>
 
 
+
+</body>
+</html>
+
+<style type='text/css'>
+  .maplegend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .maplegend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .maplegend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .maplegend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .maplegend .legend-source {
+    font-size: 80%;
+    color: #777;
+    clear: both;
+    }
+  .maplegend a {
+    color: #777;
+    }
+</style>
+{% endmacro %}"""
+
+macro1 = MacroElement()
+macro1._template = Template(template3)
+m.get_root().add_child(macro1)
 
 m.save('uzito.html')
 
@@ -506,17 +601,34 @@ fig3.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
+fig3.update_xaxes(
+    rangeslider_visible=True,
+    rangeselector=dict(
+        buttons=list([
+            dict(count=1, label="1m", step="month", stepmode="backward"),
+            dict(step="all",label="March Onwards")
+        ])
+    )
+)
 fig4 = px.area(tsa_daily, x='Date', y='Order', hover_data=['Order','Date'],color_discrete_sequence =['blue']*len(total_per_day))
 fig4.update_xaxes(dtick= 86400000*12)
 fig4.update_layout(
     title= "Daily TSA orders")
 fig4.update(layout=dict(title=dict(x=0.5)))
-
 fig4.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
-
+fig4.update_xaxes(
+    rangeslider_visible=True,
+    rangeselector=dict(
+        buttons=list([
+            dict(count=1, label="1m", step="month", stepmode="backward"),
+            dict(count=2, label="2m", step="month", stepmode="backward"),
+            dict(step="all",label="January Onwards")
+        ])
+    )
+)
 
 #fig2 = px.line(trial_data, x=date, y=amount,color=employee_name)
 
@@ -542,9 +654,9 @@ app.layout = html.Div([
     html.H1(children = 'GREENLIFE ANALYTICS DASHBOARD',style={'text-align': 'center'}),
     html.Div(),
 
-    html.Div(children = 'Total Sales TSA: Kshs. ' + str(total_order)),
-    html.Div(children = 'Total Sales Deliveries: Kshs. ' + str(total_amount)),
-    html.Div(children = 'Total Sales Public Health: Kshs. ' + str(total_public_health)),
+    html.Div(children = 'Total Sales TSA: Kshs. ' + str(total_order.astype('int'))),
+    html.Div(children = 'Total Sales Deliveries: Kshs. ' + str(total_amount.astype('int'))),
+    html.Div(children = 'Total Sales Public Health: Kshs. '  +str(total_public_health.astype('int'))),
     html.Div(children=[
 
         # first column of first row
@@ -561,14 +673,16 @@ app.layout = html.Div([
             # first column of second row
             html.Div(children=[
 
-                 dcc.Graph(figure=fig7)
+                 dcc.Graph(
+                 figure=fig7,
+                 config={'displayModeBar': False})
 
             ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
             # second column of second row
             html.Div(children=[
 
-                dcc.Graph(figure=fig1)
+                dcc.Graph(figure=fig1,config={'displayModeBar': False})
             ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
 
@@ -581,7 +695,7 @@ app.layout = html.Div([
 
             html.Iframe(id = 'map2', srcDoc = open('uzito2.html','r').read(),height =450,width=1300),
 
-        ], style={ 'vertical-align': 'top', 'margin-left': '1vw', 'margin-top': '1vw'}),
+        ], style={ 'vertical-align': 'top', 'margin-left': '6vw', 'margin-top': '3vw'}),
 
     ], className='row'),
 
@@ -590,14 +704,14 @@ app.layout = html.Div([
             # first column of second row
             html.Div(children=[
 
-                 dcc.Graph(figure=fig8)
+                 dcc.Graph(figure=fig8,config={'displayModeBar': False})
 
             ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
             # second column of second row
             html.Div(children=[
 
-                dcc.Graph(figure=fig4)
+                dcc.Graph(figure=fig4,config={'displayModeBar': False})
             ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
 
@@ -618,14 +732,14 @@ app.layout = html.Div([
             # first column of second row
             html.Div(children=[
 
-                 dcc.Graph(figure=fig2)
+                 dcc.Graph(figure=fig2,config={'displayModeBar': False})
 
             ], style={'display': 'inline-block', 'vertical-align': 'middle', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
             # second column of second row
             html.Div(children=[
 
-                dcc.Graph(figure=fig3)
+                dcc.Graph(figure=fig3,config={'displayModeBar': False})
             ], style={'display': 'inline-block', 'vertical-align': 'top', 'margin-left': '3vw','text-align': 'center','margin-top': '3vw'}),
 
 
