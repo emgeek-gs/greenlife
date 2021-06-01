@@ -16,7 +16,8 @@ from folium import plugins
 from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from branca.element import Template, MacroElement
-
+import urllib.request
+import bz2
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -33,12 +34,14 @@ response1
 
 data_ch = pd.json_normalize(response1, 'checkins')
 
-f2 = requests.get('https://github.com/emgeek-gs/greenlife/blob/dafcf0309f32e063ae4815efc2349be24814e68c/assets/checkinorder.geojson')
+f2 = requests.get('https://raw.githubusercontent.com/emgeek-gs/greenlife/main/assets/checkinorder.geojson')
 
-gj_1 = geojson.load(f2)
+gj_1 = f2.json()
+f3 = requests.get('https://raw.githubusercontent.com/emgeek-gs/greenlife/main/assets/checkintsa2.geojson')
 
-f3 = requests.get('https://github.com/emgeek-gs/greenlife/blob/dafcf0309f32e063ae4815efc2349be24814e68c/assets/checkintsa2.geojson')
-gj_2 = geojson.load(f3)
+gj_2 = f3.json()
+
+
 gj_1
 features_1 = gj_1['features'][0]
 features_1
