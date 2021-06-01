@@ -17,9 +17,7 @@ from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from branca.element import Template, MacroElement
 
-''''points = gpd.GeoDataFrame.from_file('C:/Users/Mannu/Desktop/surveyexe/Plans/Data Practise/Greenlife/checkins.geojson') # or geojson etc
-polys = gpd.GeoDataFrame.from_file('C:/Users/Mannu/Desktop/Polardot Docs/JOBS/Festus LIS/Vectors/ken_admbnda_adm1_iebc_20191031.shp')
-pointInPoly = gpd.sjoin(points, polys, op='within')'''
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN])
@@ -35,11 +33,12 @@ response1
 
 data_ch = pd.json_normalize(response1, 'checkins')
 
-with open('C:/Users/Mannu/Desktop/surveyexe/Plans/Data Practise/Greenlife/webapp/assets/checkinorder.geojson') as f2:
-    gj_1 = geojson.load(f2)
-gj_1
-with open('C:/Users/Mannu/Desktop/surveyexe/Plans/Data Practise/Greenlife/webapp/assets/checkintsa2.geojson') as f3:
-    gj_2 = geojson.load(f3)
+f2 = requests.get('https://github.com/emgeek-gs/greenlife/blob/dafcf0309f32e063ae4815efc2349be24814e68c/assets/checkinorder.geojson')
+
+gj_1 = geojson.load(f2)
+
+f3 = requests.get('https://github.com/emgeek-gs/greenlife/blob/dafcf0309f32e063ae4815efc2349be24814e68c/assets/checkintsa2.geojson')
+gj_2 = geojson.load(f3)
 gj_1
 features_1 = gj_1['features'][0]
 features_1
@@ -86,8 +85,7 @@ gj = response.json()
 
 features = gj['features'][0]
 features
-trial_data = pd.read_csv('C:/Users/Mannu/Desktop/surveyexe/Plans/Data Practise/Greenlife/webapp/assets/locationproducts2.csv')
-trial_data
+
 
 county_total=trial_data.groupby(['ADM1_EN'], as_index=False).agg({'Amount' : 'sum', 'Quantity' : 'sum'})
 county_total
@@ -497,27 +495,26 @@ fig3 = px.area(total_per_day, x='Date', y='Amount', hover_data=['Amount','Quanti
 
 fig3.update_xaxes(dtick= 86400000*3)
 
-fig4 = px.area(tsa_daily, x='Date', y='Order', hover_data=['Order','Date'],color_discrete_sequence =['blue']*len(total_per_day))
+
 fig3.update_layout(
     title= "Daily Delivery Sales")
 fig3.update(layout=dict(title=dict(x=0.5)))
-
-fig4.update_xaxes(dtick= 86400000*12)
-fig4.update_layout(
-    title= "Daily TSA orders")
-fig4.update(layout=dict(title=dict(x=0.5)))
 fig3.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
+fig4 = px.area(tsa_daily, x='Date', y='Order', hover_data=['Order','Date'],color_discrete_sequence =['blue']*len(total_per_day))
+fig4.update_xaxes(dtick= 86400000*12)
+fig4.update_layout(
+    title= "Daily TSA orders")
+fig4.update(layout=dict(title=dict(x=0.5)))
 
-fig3.update_layout(hovermode="x unified")
 fig4.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
 
-fig4.update_layout(hovermode="x unified")
+
 #fig2 = px.line(trial_data, x=date, y=amount,color=employee_name)
 
 fig6 = px.bar(county_total, y= 'ADM1_EN', x='Amount',hover_data=['ADM1_EN','Amount','Quantity'],orientation='h',height=400,color='ADM1_EN')
