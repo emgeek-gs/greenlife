@@ -17,6 +17,8 @@ from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from branca.element import Template, MacroElement
 from datetime import datetime, timedelta
+from folium.plugins import FastMarkerCluster
+import calendar
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
@@ -29,7 +31,7 @@ token = "pk.eyJ1IjoiZW1tYW51ZWxuenlva2EiLCJhIjoiY2swYzA5MTVqMHgweTNsbWR6cTc1OXp3
 res1 = requests.get('https://portal.greenlife.co.ke/api/checkin')
 
 response1 = json.loads(res1.text)
-response1
+
 
 data_ch = pd.json_normalize(response1, 'checkins')
 
@@ -41,17 +43,22 @@ f3 = requests.get('https://raw.githubusercontent.com/emgeek-gs/greenlife/main/as
 gj_2 = f3.json()
 
 
-gj_1
+
 features_1 = gj_1['features'][0]
-features_1
+
 data_ch.columns.values[[0,1,2,3,4,5,6,7,8,9]] = ['Date','Time','Location','Latitude','Longitude','County','Region','TSA First Name','TSA Last Name','Order']
+data_ch.head(40)
 for col in ['Date']:
     data_ch[col] = pd.to_datetime(data_ch[col], format='%d/%m/%Y')
+
+data_ch['MonthNm'] = data_ch['Date'].dt.month
+data_ch['Month Name'] = data_ch['MonthNm'].apply(lambda x: calendar.month_name[x])
+data_ch
 data_ch.sort_values(by='Date',inplace=True, ascending=True)
 data_ch['TSA Name']  = data_ch.iloc[:, 7] + ' ' + data_ch.iloc[:, 8]
-
-data_ch2 = data_ch.iloc[:, [0,1,2,10,3,4,5,6,9]]
-
+data_ch
+data_ch2 = data_ch.iloc[:, [0,1,2,10,3,4,5,6,9,11,12]]
+data_ch2
 
 data_ch2['Order'] = pd.to_numeric(data_ch2['Order'], errors='coerce')
 
@@ -70,6 +77,10 @@ total_per_county.to_csv('data_analytics_county.csv',index=False)
 
 
 tsa_daily=data_ch2.groupby(['Date'], as_index=False).agg({'Order' : 'sum'})
+data_ch3 = data_ch2.sort_values(by=['MonthNm'], ascending=False)
+
+tsa_monthly=data_ch3.groupby(['Month Name','MonthNm','Region'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['MonthNm'], ascending=True)
+tsa_monthly
 tsa_daily
 
 public_health = data_ch2[data_ch2['TSA Name'].str.contains('Samuel Mbithi')]
@@ -304,12 +315,18 @@ col_mapping
 data_2 = data.iloc[:, [107,2,3,61,8,4,5,6,57,106,]]
 data_2
 data_1 = data_2.dropna(subset = ['Price','Product Name'])
-data_1
+
 #data_1.to_csv('data_analytics.csv',index=False)
+
 for col in ['Date']:
     data_1[col] = pd.to_datetime(data_1[col], format='%d/%m/%Y')
-data_1.sort_values(by='Date',inplace=True, ascending=True)
+data_1['MonthNm'] = data_1['Date'].dt.month
+data_1['Month Name'] = data_1['MonthNm'].apply(lambda x: calendar.month_name[x])
 data_1
+'''data_1['Date'] = pd.to_datetime(data_1['Date'], errors='coerce')'''
+data_1.sort_values(by='Date',inplace=True, ascending=True)
+
+
 # Trial Data trial_data =
 #trial_data = pd.read_csv('data_analytics_fk.csv')
 
@@ -322,9 +339,12 @@ employee_per_day=data_1.groupby(['Date', 'Employee Name'], as_index=False).agg({
 
 
 
+data_1_1 = data_1.sort_values(by=['MonthNm'], ascending=False)
 
+total_monthly=data_1_1.groupby(['Month Name','MonthNm','Product Name'], as_index=False).agg({'Amount' : 'sum'}).sort_values(by=['MonthNm'], ascending=True)
+total_monthly
 total_per_day=data_1.groupby(['Date'], as_index=False).agg({'Amount' : 'sum', 'Quantity' : 'sum'})
-total_per_day
+
 
 
 
@@ -458,7 +478,50 @@ macro._template = Template(template)
 m2.get_root().add_child(macro)
 m2.save('uzito2.html')
 
-m = folium.Map((0.04626, 37.65587), tiles=None, zoom_start=6)
+
+
+folium_map = folium.Map(location=[0.04626, 37.65587],
+                        zoom_start=6,
+                        tiles='CartoDB dark_matter')
+
+# These two lines should create FastMarkerClusters
+FastMarkerCluster(data=list(zip(data_1['Latitude'].values, data_1['Longitude'].values))).add_to(folium_map)
+
+folium.LayerControl().add_to(folium_map)
+data_1
+for index, row in data_1.iterrows():
+
+    # generate the popup message that is shown on click.
+    '''popup_text = "{}<br> ALAND: {:,}<br> AWATER: {:,}"
+    popup_text = popup_text.format(
+                      index,
+                      row[3],
+                      row[1]
+                      )'''
+    folium.CircleMarker(location=(row[6],
+                                  row[7]),
+                        radius= row[9],
+                        color="#007849",
+
+                        fill=False).add_to(folium_map)
+"""for row in data_1.iterrows():
+
+    # generate the popup message that is shown on click.
+    popup_text = "{}<br> Product Name: {:,}<br> Date: {:,}<br> Time: {:,}<br> Amount: {:,}<br> Location: {:,}"
+    popup_text = popup_text.format(
+
+                      row[3],
+                      row[1],
+                      row[2],
+                      row[9],
+                      row[5]
+                      )"""
+
+
+
+
+
+"""m = folium.Map((0.04626, 37.65587), tiles=None, zoom_start=6)
 
 folium.TileLayer(tiles='https://api.mapbox.com/styles/v1/emmanuelnzyoka/ckiyknitw6tcx1al28jnkbqyk/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZW1tYW51ZWxuenlva2EiLCJhIjoiY2swYzA5MTVqMHgweTNsbWR6cTc1OXp3bSJ9.lzaPgndzbQq014PHdgkIsg', name='Base Map',attr='Emmanuel Nzyoka').add_to(m)
 
@@ -468,7 +531,7 @@ HeatMap(heat_data, name = "Heat Map").add_to(m)
 marker_cluster = MarkerCluster(heat_data,name = "Cluster Map")
 # Add marker cluster to map
 marker_cluster.add_to(m)
-folium.LayerControl().add_to(m)
+folium.LayerControl().add_to(m)"""
 
 template3 = """
 {% macro html(this, kwargs) %}
@@ -556,18 +619,21 @@ template3 = """
 
 macro1 = MacroElement()
 macro1._template = Template(template3)
-m.get_root().add_child(macro1)
+folium_map.get_root().add_child(macro1)
 
-m.save('uzito.html')
-
-
+folium_map.save('uzito.html')
 
 
-"""fig = px.scatter_mapbox(data_1, lat="Latitude", lon="Longitude", color ="Amount" ,size="Quantity",color_continuous_scale=px.colors.sequential.Viridis,size_max=25,
 
-                               hover_name="Product Name", hover_data=['Date','Time','Amount','Quantity','Location'])
-fig.update_layout(mapbox_style='light', mapbox_accesstoken=token,mapbox_zoom=5, mapbox_center = {"lat":0.04626, "lon": 37.65587},title="Delivery Locations", height=600)
-fig.update(layout=dict(title=dict(x=0.5)))"""
+data_diffq = (data_1["Amount"].max() - data_1["Amount"].min()) / 16
+data_1["scale"] = (data_1["Amount"] - data_1["Amount"].min()) / data_diffq + 1
+data_1.head(100)
+
+fig = px.scatter_mapbox(data_1, lat="Latitude", lon="Longitude",size="scale",color = "Amount",color_continuous_scale=px.colors.sequential.Plasma,
+
+                               hover_name="Product Name", hover_data={'scale':False,'Date':True,'Time':True,'Amount':True,'Location':True})
+fig.update_layout(mapbox_style='light', mapbox_accesstoken=token,mapbox_zoom=5, mapbox_center = {"lat":0.04626, "lon": 37.65587},title="Delivery Locations", height=600,width=1300)
+fig.update(layout=dict(title=dict(x=0.5)))
 fig1 = px.bar(total_per_county[:10], y= 'County', x='Order',hover_data=['County','Order'],orientation='h')
 
 fig1.update_layout(
@@ -589,46 +655,36 @@ fig2.update_layout({
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
 
-fig3 = px.area(total_per_day, x='Date', y='Amount', hover_data=['Amount','Quantity','Date'],color_discrete_sequence =['blue']*len(total_per_day))
 
-fig3.update_xaxes(dtick= 86400000*3)
+
+
+'''fig3 = px.area(total_per_day, x='Date', y='Amount', hover_data=['Product Name','Date','Amount'],color_discrete_sequence =['blue']*len(total_per_day))'''
+
+fig3 = px.bar(total_monthly, x='Month Name', y='Amount', color="Product Name",
+            hover_data=['Product Name','Amount'], barmode = 'stack')
 
 
 fig3.update_layout(
-    title= "Daily Delivery Sales")
+    title= "Monthly Delivery Sales")
 fig3.update(layout=dict(title=dict(x=0.5)))
 fig3.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
-fig3.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(step="all",label="March Onwards")
-        ])
-    )
-)
-fig4 = px.area(tsa_daily, x='Date', y='Order', hover_data=['Order','Date'],color_discrete_sequence =['blue']*len(total_per_day))
-fig4.update_xaxes(dtick= 86400000*12)
+
+fig4 = px.bar(tsa_monthly, x='Month Name', y='Order', color="Region",
+            hover_data=['Region','Order'], barmode = 'stack')
+
 fig4.update_layout(
-    title= "Daily TSA orders")
+    xaxis_title="Month",
+    yaxis_title="TSA Orders",
+    title= "Monthly TSA orders")
+
 fig4.update(layout=dict(title=dict(x=0.5)))
 fig4.update_layout({
 'plot_bgcolor': 'rgba(0, 0, 0, 0)',
 'paper_bgcolor': 'rgba(0, 0, 0, 0)',
 })
-fig4.update_xaxes(
-    rangeslider_visible=True,
-    rangeselector=dict(
-        buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward"),
-            dict(count=2, label="2m", step="month", stepmode="backward"),
-            dict(step="all",label="January Onwards")
-        ])
-    )
-)
 
 #fig2 = px.line(trial_data, x=date, y=amount,color=employee_name)
 
@@ -663,7 +719,7 @@ app.layout = html.Div([
         html.Div(children=[
 
 
-            html.Iframe(id = 'map3', srcDoc = open('county.html','r').read(),height =550,width=1300),
+            html.Iframe(id = 'map3', srcDoc = open('county.html','r').read(),height =500,width=1200),
 
         ], style={ 'vertical-align': 'top', 'margin-left': '6vw', 'margin-top': '3vw'}),
 
@@ -693,7 +749,7 @@ app.layout = html.Div([
         # first column of first row
         html.Div(children=[
 
-            html.Iframe(id = 'map2', srcDoc = open('uzito2.html','r').read(),height =450,width=1300),
+            html.Iframe(id = 'map2', srcDoc = open('uzito2.html','r').read(),height =500,width=1200),
 
         ], style={ 'vertical-align': 'top', 'margin-left': '6vw', 'margin-top': '3vw'}),
 
@@ -721,10 +777,11 @@ app.layout = html.Div([
             # first column of first row
             html.Div(children=[
 
+                dcc.Graph(figure=fig)
+                #html.Iframe(id = 'map', srcDoc = open('uzito.html','r').read(),height =450,width=1300),
 
-                html.Iframe(id = 'map', srcDoc = open('uzito.html','r').read(),height =450,width=1300),
-
-            ], style={ 'vertical-align': 'top', 'margin-left': '6vw', 'margin-top': '3vw'}),
+            ],
+            ),
 
         ], className='row'),
         html.Div(children=[
