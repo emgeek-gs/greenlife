@@ -20,6 +20,7 @@ from datetime import datetime, timedelta
 from folium.plugins import FastMarkerCluster
 import calendar
 
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.LUMEN])
@@ -77,9 +78,9 @@ total_per_county.to_csv('data_analytics_county.csv',index=False)
 
 
 tsa_daily=data_ch2.groupby(['Date'], as_index=False).agg({'Order' : 'sum'})
-data_ch3 = data_ch2.sort_values(by=['MonthNm'], ascending=False)
-
-tsa_monthly=data_ch3.groupby(['Month Name','MonthNm','Region'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['MonthNm'], ascending=True)
+data_ch3 = data_ch2.sort_values(by=['MonthNm'], ascending=True)
+data_ch3
+tsa_monthly=data_ch3.groupby(['Month Name','Region','MonthNm'], as_index=False).agg({'Order' : 'sum'}).sort_values(by=['MonthNm','Order'], ascending=True)
 tsa_monthly
 tsa_daily
 
@@ -278,7 +279,24 @@ template = """
 macro = MacroElement()
 macro._template = Template(template)
 m3.get_root().add_child(macro)
-
+draw = plugins.Draw(export=True)
+draw.add_to(m3)
+formatter = "function(num) {return L.Util.formatNum(num, 3) + ' º ';};"
+plugins.MousePosition(
+    position='topright',
+    separator=' | ',
+    empty_string='',
+    lng_first=True,
+    num_digits=20,
+    prefix='Coordinates:',
+    lat_formatter=formatter,
+    lng_formatter=formatter,
+).add_to(m3)
+plugins.Fullscreen(position='topright', # ‘topleft’, default=‘topright’, ‘bottomleft’, ‘bottomright’
+                   title='FULL SCREEN ON',
+                   title_cancel='FULL SCREEN OFF',
+                   force_separate_button=True
+                  ).add_to(m3)
 m3.save('county.html')
 
 
@@ -339,9 +357,8 @@ employee_per_day=data_1.groupby(['Date', 'Employee Name'], as_index=False).agg({
 
 
 
-data_1_1 = data_1.sort_values(by=['MonthNm'], ascending=False)
 
-total_monthly=data_1_1.groupby(['Month Name','MonthNm','Product Name'], as_index=False).agg({'Amount' : 'sum'}).sort_values(by=['MonthNm'], ascending=True)
+total_monthly=data_1.groupby(['Month Name','MonthNm','Product Name'], as_index=False).agg({'Amount' : 'sum'}).sort_values(by=['MonthNm','Amount'], ascending=True)
 total_monthly
 total_per_day=data_1.groupby(['Date'], as_index=False).agg({'Amount' : 'sum', 'Quantity' : 'sum'})
 
@@ -371,6 +388,16 @@ units_sold
 m2 = folium.Map((0.04626, 37.65587), tiles=None, zoom_start=6)
 
 folium.TileLayer(tiles='https://api.mapbox.com/styles/v1/emmanuelnzyoka/ckiyknitw6tcx1al28jnkbqyk/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiZW1tYW51ZWxuenlva2EiLCJhIjoiY2swYzA5MTVqMHgweTNsbWR6cTc1OXp3bSJ9.lzaPgndzbQq014PHdgkIsg', name='Base Map',attr='Emmanuel Nzyoka').add_to(m2)
+
+
+data_ch2['Date'] = data_ch2['Date'].sort_values(ascending=True)
+fdata = []
+for _, d in data_ch2.groupby('Date'):
+   fdata.append([[row['Latitude'], row['Longitude'], row['Order']] for _, row in d.iterrows()])
+hm = plugins.HeatMapWithTime(fdata, auto_play=True,max_opacity=0.8)
+hm.add_to(m2)
+
+'''
 fdata = []
 for _, d in data_ch2.groupby('Date'):
    fdata.append([[row['Latitude'], row['Longitude'], row['Order']] for _, row in d.iterrows()])
@@ -382,7 +409,7 @@ time_index = [
 hm = plugins.HeatMapWithTime(fdata, index=time_index, auto_play=True, max_opacity=0.7)
 # heat_data2 = [[row['Latitude'],row['Longitude']] for index, row in data_ch2.iterrows()]
 #hm = plugins.HeatMapWithTime(fdata, auto_play=True,max_opacity=0.8)
-hm.add_to(m2)
+hm.add_to(m2)'''
 # HeatMap(heat_data2, name = "Heat Map").add_to(m2)
 # marker_cluster = MarkerCluster(heat_data2,name = "Cluster Map")
 # Add marker cluster to map
@@ -476,6 +503,15 @@ template = """
 macro = MacroElement()
 macro._template = Template(template)
 m2.get_root().add_child(macro)
+draw1 = plugins.Draw(export=True)
+draw1.add_to(m2)
+
+plugins.Fullscreen(position='topright', # ‘topleft’, default=‘topright’, ‘bottomleft’, ‘bottomright’
+                   title='FULL SCREEN ON',
+                   title_cancel='FULL SCREEN OFF',
+                   force_separate_button=True
+                  ).add_to(m2)
+
 m2.save('uzito2.html')
 
 
@@ -632,7 +668,7 @@ data_1.head(100)
 fig = px.scatter_mapbox(data_1, lat="Latitude", lon="Longitude",size="scale",color = "Amount",color_continuous_scale=px.colors.sequential.Plasma,
 
                                hover_name="Product Name", hover_data={'scale':False,'Date':True,'Time':True,'Amount':True,'Location':True})
-fig.update_layout(mapbox_style='light', mapbox_accesstoken=token,mapbox_zoom=5, mapbox_center = {"lat":0.04626, "lon": 37.65587},title="Delivery Locations", height=600,width=1300)
+fig.update_layout(mapbox_style='satellite-streets', mapbox_accesstoken=token,mapbox_zoom=5, mapbox_center = {"lat":0.04626, "lon": 37.65587},title="Delivery Locations", height=600,width=1300)
 fig.update(layout=dict(title=dict(x=0.5)))
 fig1 = px.bar(total_per_county[:10], y= 'County', x='Order',hover_data=['County','Order'],orientation='h')
 
@@ -665,6 +701,7 @@ fig3 = px.bar(total_monthly, x='Month Name', y='Amount', color="Product Name",
 
 
 fig3.update_layout(
+xaxis_title="Month",
     title= "Monthly Delivery Sales")
 fig3.update(layout=dict(title=dict(x=0.5)))
 fig3.update_layout({
@@ -806,6 +843,8 @@ app.layout = html.Div([
 
     ],
     )
+
+
 
 
 if __name__ == '__main__':
