@@ -1,93 +1,550 @@
-Employee Name,Date,Time,Product Name,Quantity,Location,Latitude,Longitude,Price,Amount
-Michael Wanjala Simiyu,13/4/2021,10:03.19AM,LEXUS 247SC,2.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,660.0,1320.0
-Michael Wanjala Simiyu,13/4/2021,10:03.19AM,ESCORT 19EC,1.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,350.0,350.0
-Eliud Kibet Taurus,9/3/2021,10:28.30AM,RANGER 480EC,5.0,"Mombasa Road, Mariakani, Kilifi County",-3.864282,39.474076,760.0,3800.0
-Kipkemoi Thomas Bett,10/3/2021,12:04.08AM,HUMIPOWER,36.0,"A104, Nakuru County, Kenya",-0.1194206,35.6770229,630.0,22680.0
-Michael Wanjala Simiyu,10/3/2021,12:35.13AM,UNDERTAKER 480EC,2.0,"Unnamed Road, Busia County, Kenya",0.737079,34.3196699,2320.0,4640.0
-Simon Kuria Kamau,11/3/2021,11:41.06AM,PENTAGON 50 EC,18.0,"Kaplong - Narok - Maai Road, Narok County, Kenya",-1.1006862,36.1783298,2000.0,36000.0
-Dennis Karani Wanjiku,12/3/2021,10:31.44AM,Catapult 480SL,2.0,"Unnamed Road, Nakuru County, Kenya",-0.7446998,36.5258353,2920.0,5840.0
-Eliud Kibet Taurus,12/3/2021,11:49.56AM,OPTIMIZER,1.0,"Kenya, Mtwapa, Kilifi County",-3.927312,39.7410449,1870.0,1870.0
-Eliud Kibet Taurus,12/3/2021,11:49.56AM,INTEGRA,1.0,"Kenya, Mtwapa, Kilifi County",-3.927312,39.7410449,120.0,120.0
-Joseph Nthuli Musembi,13/3/2021,10:39.59AM,RANGER 480EC,12.0,"Casuarina Road, Malindi, Kilifi County",-3.2191133,40.1172165,1370.0,16440.0
-Simon Kuria Kamau,15/3/2021,10:50.56AM,Catapult 480SL,30.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.0942171,36.091209,610.0,18300.0
-Simon Kuria Kamau,15/3/2021,10:50.56AM,PENTAGON 50 EC,10.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.0942171,36.091209,2000.0,20000.0
-Eliud Kibet Taurus,17/3/2021,2:54.45PM,ABSOLUTE 375SC,1.0,"Unnamed Road, Kilifi County, Kenya",-3.9181221,39.7406192,1970.0,1970.0
-,19/3/2021,1:16.47PM,Bentagran Top 240EC,6.0,"Unnamed Road, Nairobi, Machakos County",-1.419347888046595,36.94922516953344,220.0,1320.0
-Dennis Karani Wanjiku,22/3/2021,10:38.52AM,Governor 580SE,4.0,"Unnamed Road, Nakuru County, Kenya",-0.8050342,36.2137498,2090.0,8360.0
-Simon Kuria Kamau,22/3/2021,1:58.32PM,Catapult 480SL,10.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.095783,36.0837349,610.0,6100.0
-Simon Kuria Kamau,22/3/2021,1:58.32PM,PENTAGON 50 EC,4.0,"Kaplong - Narok - Maai Road, Ntulelei, Narok County",-1.095783,36.0837349,2000.0,8000.0
-Michael Wanjala Simiyu,27/3/2021,10:54.41AM,Governor 580SE,1.0,"Tulienge-Cheptais Road, Bungoma County, Kenya",0.7934142,34.4567351,2090.0,2090.0
-Michael Wanjala Simiyu,27/3/2021,10:54.41AM,Catapult 480SL,1.0,"Tulienge-Cheptais Road, Bungoma County, Kenya",0.7934142,34.4567351,610.0,610.0
-Michael Wanjala Simiyu,30/3/2021,1:09.40PM,Governor 580SE,2.0,"Unnamed Road, Lubao, Kakamega County",0.3373563,34.8132557,2090.0,4180.0
-,30/3/2021,1:34.59PM,Governor 580SE,4.0,"Unnamed Road, Trans-Nzoia County, Kenya",1.1613072,34.9558423,10100.0,40400.0
-Michael Wanjala Simiyu,7/4/2021,11:17.56AM,Governor 580SE,4.0,"A104, Bungoma, Bungoma County",0.5925085,34.5528228,2090.0,8360.0
-,7/4/2021,4:17.20PM,KUNGU NIL 200SL,200.0,"Race Course Road, City Square, Nairobi",-1.2832263,36.8317088,100.0,20000.0
-,8/4/2021,3:42.20PM,GREENLIFE STAR (2in1) BATTERY SPRAYER,6.0,"90100, Mbolu Malu Road, Machakos",-1.5187225,37.2691448,7230.0,43380.0
-Michael Wanjala Simiyu,10/4/2021,08:37.34AM,Governor 580SE,1.0,"2, Bungoma, Bungoma County",0.5654828,34.5619817,10100.0,10100.0
-Michael Wanjala Simiyu,10/4/2021,08:37.34AM,Governor 580SE,3.0,"2, Bungoma, Bungoma County",0.5654828,34.5619817,2090.0,6270.0
-Dennis Karani Wanjiku,10/4/2021,09:31.56AM,ABSOLUTE 375SC,3.0,"A104, Nakuru County, Kenya",-0.856585,36.5504902,7590.0,22770.0
-,10/4/2021,10:35.00AM,Governor 580SE,100.0,"Ziwa Machine Road, Uasin Gishu County, Kenya",0.8258544,35.2225741,2090.0,209000.0
-,10/4/2021,10:35.00AM,Governor 580SE,100.0,"Ziwa Machine Road, Uasin Gishu County, Kenya",0.8258544,35.2225741,10100.0,1010000.0
-,11/4/2021,10:43.51AM,COMMANDER 240EC,10.0,"Hatheru Road, Maziwa, Nairobi",-1.2920122,36.7575403,390.0,3900.0
-Dennis Karani Wanjiku,12/4/2021,09:54.43AM,Catapult 480SL,12.0,"Unnamed Road, Nakuru County, Kenya",-0.7269463,36.4765015,610.0,7320.0
-Michael Wanjala Simiyu,12/4/2021,11:42.22AM,Governor 580SE,4.0,"924, Moi Avenue, Bungoma",0.5666594,34.560706,10100.0,40400.0
-Michael Wanjala Simiyu,13/4/2021,10:03.19AM,TRINITY GOLD 452WP,1.0,"Chwele - Kimilili - Kamukuywa Road, Chwele, Bungoma County",0.7362568,34.581467,2000.0,2000.0
-Michael Wanjala Simiyu,13/4/2021,2:03.43PM,Governor 580SE,60.0,"A1, Kakamega County, Kenya",0.3371333,34.8203617,2090.0,125400.0
-Simon Kuria Kamau,14/4/2021,1:02.37PM,COMPLIANT 560SC,2.0,"Unnamed Road, Narok, Narok County",-1.087375,35.87426,3650.0,7300.0
-Simon Kuria Kamau,14/4/2021,1:02.37PM,MILESTONE 250SC,1.0,"Unnamed Road, Narok, Narok County",-1.087375,35.87426,9300.0,9300.0
-Dennis Karani Wanjiku,16/4/2021,06:59.06AM,TAURUS 500SP,3.0,"Nakuru - Nairobi Road, Nakuru County, Kenya",-0.7581089,36.4788675,6380.0,19140.0
-Michael Wanjala Simiyu,20/4/2021,3:26.16PM,COMMANDER 240EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.750536,34.6813308,2920.0,2920.0
-Simon Kuria Kamau,22/4/2021,5:29.28PM,Governor 580SE,2.0,"Kaplong - Narok - Maai Road, Narok, Narok County",-1.0898322,35.8792783,39200.0,78400.0
-Michael Wanjala Simiyu,26/4/2021,12:32.06AM,Governor 580SE,2.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,2090.0,4180.0
-Michael Wanjala Simiyu,26/4/2021,12:32.06AM,Goldchance Super Flowers & Fruits,1.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,380.0,380.0
-Michael Wanjala Simiyu,26/4/2021,12:32.06AM,PROFILE 440EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7690144,34.433516,270.0,270.0
-Bernard Kimani Nyambura,29/4/2021,11:53.09AM,Governor 580SE,2.0,"1649, Mburu Gichua Rd, Biashara",-0.2862827,36.0757758,39200.0,78400.0
-Marion Jones Cheroitich,29/4/2021,11:57.45AM,AGROMINE 860SL,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,670.0,4020.0
-Marion Jones Cheroitich,29/4/2021,11:57.45AM,INTEGRA,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,220.0,1320.0
-Marion Jones Cheroitich,29/4/2021,11:57.45AM,Bentagran Top 240EC,6.0,"1649, Mburu Gichua Rd, Biashara",-0.2862726,36.0757802,220.0,1320.0
-Bernard Kimani Nyambura,30/4/2021,12:03.55AM,Governor 580SE,2.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,10100.0,20200.0
-Bernard Kimani Nyambura,30/4/2021,12:03.55AM,Governor 580SE,2.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,10100.0,20200.0
-Bernard Kimani Nyambura,30/4/2021,12:30.40AM,Governor 580SE,10.0,"Unnamed Road, Nakuru County, Kenya",-0.3979942,35.9102702,2090.0,20900.0
-Bernard Kimani Nyambura,4/5/2021,1:07.09PM,LAVENDER TOTAL,15.0,"C57, Nakuru County, Kenya",-0.4347352,35.9705162,140.0,2100.0
-Bernard Kimani Nyambura,4/5/2021,1:07.28PM,Governor 580SE,10.0,"C57, Nakuru County, Kenya",-0.4347352,35.9705162,2090.0,20900.0
-Michael Wanjala Simiyu,4/5/2021,1:25.30PM,Governor 580SE,1.0,"Unnamed Road, Busia County, Kenya",0.4032376,34.3541089,10100.0,10100.0
-,4/5/2021,1:33.52PM,ABSOLUTE 375SC,6.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,820.0,4920.0
-,4/5/2021,1:33.52PM,INTEGRA,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,220.0,5280.0
-,4/5/2021,1:33.52PM,INTEGRA,12.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,120.0,1440.0
-,4/5/2021,1:33.52PM,KUNGU NIL 200SL,100.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,100.0,10000.0
-,4/5/2021,1:33.52PM,KUNGU NIL 200SL,36.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,650.0,23400.0
-,4/5/2021,1:33.52PM,PANTHENON 100CS,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,700.0,16800.0
-,4/5/2021,1:33.52PM,TRINITY GOLD 452WP,12.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,225.0,2700.0
-,4/5/2021,1:33.52PM,UNDERTAKER 480EC,48.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,2320.0,111360.0
-,4/5/2021,1:33.52PM,UNDERTAKER 480EC,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,530.0,12720.0
-,4/5/2021,1:33.52PM,UNDERTAKER 480EC,24.0,"Don Bosco Boys Town, Nairobi, Nairobi County",-1.3234235,36.7124025,320.0,7680.0
-,4/5/2021,2:14.45PM,EMERALD 200SL,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,240.0,1440.0
-,4/5/2021,2:14.45PM,RANGER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,1370.0,8220.0
-,4/5/2021,2:14.45PM,ESCORT 19EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,1390.0,8340.0
-,4/5/2021,2:14.45PM,NAVIGATOR 100SC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,230.0,2760.0
-,4/5/2021,2:14.45PM,NAVIGATOR 100SC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,400.0,4800.0
-,4/5/2021,2:14.45PM,UNDERTAKER 480EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,530.0,6360.0
-,4/5/2021,2:14.45PM,UNDERTAKER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,2320.0,13920.0
-,4/5/2021,2:14.45PM,UNDERTAKER 480EC,6.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,320.0,1920.0
-,4/5/2021,2:14.45PM,ESCORT 19EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,350.0,4200.0
-,4/5/2021,2:14.45PM,ESCORT 19EC,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,630.0,7560.0
-,4/5/2021,2:14.45PM,PANTHENON 100CS,24.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,700.0,16800.0
-,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,100.0,1200.0
-,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,360.0,4320.0
-,4/5/2021,2:14.45PM,KUNGU NIL 200SL,12.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,650.0,7800.0
-,4/5/2021,2:14.45PM,RANGER 480EC,18.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,190.0,3420.0
-,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,430.0,3440.0
-,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,430.0,3440.0
-,4/5/2021,2:14.45PM,RANGER 480EC,8.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,760.0,6080.0
-,4/5/2021,2:14.45PM,EMERALD 200SL,10.0,"Don Bosco Church, Nairobi, Nairobi County",-1.3372549,36.7289113,440.0,4400.0
-Michael Wanjala Simiyu,5/5/2021,08:31.47AM,ESCORT 19EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7982498,34.7095957,1390.0,1390.0
-Michael Wanjala Simiyu,5/5/2021,08:31.47AM,INTEGRA,1.0,"Unnamed Road, Bungoma County, Kenya",0.7982498,34.7095957,420.0,420.0
-,6/5/2021,12:34.40AM,KUNGU NIL 200SL,100.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,100.0,10000.0
-,6/5/2021,12:34.40AM,KUNGU NIL 200SL,25.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,360.0,9000.0
-,6/5/2021,12:34.40AM,EMERALD 200SL,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,240.0,2880.0
-,6/5/2021,12:34.40AM,EMERALD 200SL,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,440.0,5280.0
-,6/5/2021,12:34.40AM,RANGER 480EC,12.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,190.0,2280.0
-,6/5/2021,12:34.40AM,UNDERTAKER 480EC,72.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,2320.0,167040.0
-,6/5/2021,12:34.40AM,UNDERTAKER 480EC,24.0,"Limuru Road, Ruaka, Kiambu County",-1.2077299,36.7864277,530.0,12720.0
-Michael Wanjala Simiyu,8/5/2021,3:17.39PM,PROFILE 440EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7877357,34.6661223,1240.0,1240.0
-Michael Wanjala Simiyu,8/5/2021,3:18.14PM,COMMANDER 240EC,1.0,"Unnamed Road, Bungoma County, Kenya",0.7877357,34.6661223,2920.0,2920.0
+Date,Time,Location,MonthNm,Latitude,Longitude,County,Region,Order,Month Name,TSA Name
+2021-01-07,3:46.24PM,"Silanga Road, Kajiado County, Kenya",1,-1.3892385,36.6746937,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,4:25.53PM,"Unnamed Road, Nairobi, Nairobi County",1,-1.3231587,36.7068527,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,1:38.21PM,"Magadi Road, Kiserian, Kajiado County",1,-1.429898,36.6880077,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,09:55.01AM,"18b, Funzi Road, Industrial Area",1,-1.3036477,36.8450428,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,09:55.01AM,"18b, Funzi Road, Industrial Area",1,-1.3036477,36.8450428,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,11:11.22AM,"Naston, Nairobi, Kajiado County",1,-1.3972239,36.7581074,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,12:16.48AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3957379,36.7302636,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,1:08.21PM,"Rimpa Road, Kajiado County, Kenya",1,-1.4184957,36.7086061,Nairobi,Nairobi/Lower Eastern/Coast,42960,January,Samuel Mbithi
+2021-01-07,12:25.18AM,"Kenya, Nairobi, Kajiado County",1,-1.3955898,36.7316927,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,11:48.11AM,"Magadi Road, Ongata Rongai, Kajiado County",1,-1.396866,36.7500642,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,11:28.01AM,"Church Road, Ongata Rongai, Kajiado County",1,-1.3966898,36.7549899,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-07,11:42.18AM,"Magadi Road, Ongata Rongai, Kajiado County",1,-1.3967205,36.7486602,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-08,2:09.03PM,"Unnamed Road, Nairobi, Nairobi County",1,-1.3231589,36.7068723,Nairobi,Nairobi/Lower Eastern/Coast,99720,January,Samuel Mbithi
+2021-01-08,09:30.41AM,"Ruaka Stage/Tuskys, Ruaka, Kiambu County",1,-1.207106,36.7858688,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-08,11:57.21AM,"Unnamed Road, Mihango, Nairobi",1,-1.2734641,36.9971052,Nairobi,Nairobi/Lower Eastern/Coast,12000,January,Samuel Mbithi
+2021-01-08,12:02.19AM,"Unnamed Road, Mihango, Nairobi",1,-1.273462,36.9971094,Nairobi,Nairobi/Lower Eastern/Coast,17960,January,Samuel Mbithi
+2021-01-09,12:42.20AM,"Kenya, Kahawa South, Nairobi",1,-1.2110414,36.8961077,Nairobi,Nairobi/Lower Eastern/Coast,10000,January,Samuel Mbithi
+2021-01-09,12:24.55AM,"Solai Lane, City Square, Nairobi",1,-1.2838585,36.8314435,Nairobi,Nairobi/Lower Eastern/Coast,10000,January,Samuel Mbithi
+2021-01-11,2:47.00PM,"Haile Selassie Road, Thika, Kiambu County",1,-1.0316376,37.0732357,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,3:13.27PM,"Gatundu-Juja Road, Muchatha, Kiambu County",1,-1.1063174,37.0148735,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,1:30.42PM,"Uhuru Street, Thika, Kiambu County",1,-1.0356744,37.0754161,Nairobi,Nairobi/Lower Eastern/Coast,52000,January,Samuel Mbithi
+2021-01-11,09:41.01AM,"Ruaka, Ruaka, Kiambu County",1,-1.2075186,36.7862969,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,10:16.56AM,"K.U., Kahawa North, Nairobi",1,-1.1743672,36.914298,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,11:51.34AM,"Unnamed Road, Thika, Kiambu County",1,-1.0343396,37.0767096,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,12:15.36AM,"100, Uhuru Street, Thika",1,-1.0358395,37.0755858,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,12:26.07AM,"Thika Town, Thika, Kiambu County",1,-1.0351786,37.0765879,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,12:33.06AM,"Thika Town, Thika, Kiambu County",1,-1.0349313,37.0768808,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,12:43.31AM,"Kisii Road, Thika, Kiambu County",1,-1.0358677,37.0764939,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,12:49.56AM,"Kisii Road, Thika, Kiambu County",1,-1.0358677,37.0764939,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,11:10.09AM,"Yellow House No.47, Mgoko Road, Thika",1,-1.0361946,37.0707214,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,11:19.58AM,"15, Mama Ngina Drive, Thika",1,-1.0346061,37.0735039,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-11,11:35.47AM,"Kyanjau House, Kwame Nkrumah Road, Thika",1,-1.0341913,37.0747909,Nairobi,Nairobi/Lower Eastern/Coast,10000,January,Samuel Mbithi
+2021-01-11,11:27.10AM,"15, Mama Ngina Drive, Thika",1,-1.034595,37.0735038,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-12,3:04.51PM,"Unnamed Road, Kawangware, Nairobi",1,-1.2899917,36.7479983,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-12,3:19.30PM,"Kenya, Woodley, Nairobi",1,-1.3008219,36.7555599,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-12,3:33.33PM,"Kenya, Nairobi, Nairobi County",1,-1.3014626,36.7535097,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-12,5:00.55PM,"Unnamed Road, Nairobi, Nairobi County",1,-1.3239204,36.7074535,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-12,09:34.09AM,"Unnamed Road, Embakasi, Nairobi",1,-1.3312,36.8825418,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,12:53.46AM,"Marurui, Nairobi, Nairobi County",1,-1.2107226,36.874864,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,1:01.14PM,"Unnamed Road, Nairobi, Nairobi County",1,-1.210422,36.8735864,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,1:08.45PM,"Northern Bypass Road, Nairobi, Nairobi County",1,-1.2104504,36.8732267,Nairobi,Nairobi/Lower Eastern/Coast,11600,January,Samuel Mbithi
+2021-01-13,1:15.46PM,"920, Plateau Crescent, Nairobi",1,-1.2137123,36.8732907,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,4:51.22PM,"Raiply, Industrial Area, Nairobi",1,-1.3080546,36.8673714,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,4:34.26PM,"Tanga Road, Industrial Area, Nairobi",1,-1.3072872,36.8736269,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,12:34.12AM,"Kamiti Road, Kahawa South, Githurai",1,-1.2124424,36.8933056,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,09:30.03AM,"Kenya, Embakasi, Nairobi",1,-1.3140166,36.8951052,Nairobi,Nairobi/Lower Eastern/Coast,7900,January,Samuel Mbithi
+2021-01-13,11:53.28AM,"Kenya, Kahawa South, Nairobi",1,-1.1972592,36.9022012,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,12:13.32AM,"Kamiti Road, Kahawa South, Githurai",1,-1.2006565,36.8997514,Nairobi,Nairobi/Lower Eastern/Coast,24000,January,Samuel Mbithi
+2021-01-13,11:34.59AM,"44, Kamiti Road, Kahawa South",1,-1.1967217,36.9022282,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-13,11:15.28AM,"Kamiti Road, Kahawa South, Nairobi",1,-1.1893966,36.8961501,Nairobi,Nairobi/Lower Eastern/Coast,10000,January,Samuel Mbithi
+2021-01-14,2:37.47PM,"Kayole Spine Road, Umoja, Nairobi",1,-1.2755196,36.909629,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-14,2:08.16PM,"Step 1/ Calvary, Koma Rock Estate, Nairobi",1,-1.265255,36.9165618,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-14,2:15.07PM,"Tushauriane, Umoja, Nairobi",1,-1.2670681,36.9152632,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-14,10:25.34AM,"Unnamed Road, Kitisuru, Nairobi",1,-1.2106341,36.7954907,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-14,11:35.01AM,"Northern Bypass Road, Nairobi, Nairobi County",1,-1.2104404,36.8732373,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-14,11:35.01AM,"Northern Bypass Road, Nairobi, Nairobi County",1,-1.2104404,36.8732373,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-15,09:46.48AM,"45, Lunga Lunga Road, Industrial Area",1,-1.3078303,36.8702646,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-15,09:53.30AM,"45, Lunga Lunga Road, Industrial Area",1,-1.3078303,36.8702646,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-15,12:07.46AM,"Pumwani Road, Majengo, Nairobi",1,-1.2853424,36.8371791,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-15,10:29.35AM,"Busia, Nairobi South, Nairobi",1,-1.3106271,36.8487425,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-15,11:17.00AM,"Lusaka Road, Nairobi South, Nairobi",1,-1.2975518,36.8388397,Nairobi,Nairobi/Lower Eastern/Coast,805800,January,Samuel Mbithi
+2021-01-15,11:22.46AM,"33, Pembe Street, Nairobi South",1,-1.2970738,36.8389453,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,12:54.38AM,"Amani, Mihango, Nairobi",1,-1.2812755,36.9631882,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,12:41.49AM,"Tumaini, Mihango, Nairobi",1,-1.2797723,36.9663545,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,12:21.32AM,"St. Joseph, Ruai, Nairobi",1,-1.249691,36.9881091,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,12:05.08AM,"Onyatta, Nairobi, Nairobi County",1,-1.2440403,36.9888591,Nairobi,Nairobi/Lower Eastern/Coast,21400,January,Samuel Mbithi
+2021-01-16,11:28.03AM,"Eastern Bypass, Ruai, Nairobi",1,-1.2573968,36.9852431,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,10:33.48AM,"Amani, Mihango, Nairobi",1,-1.2811345,36.9634501,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,10:12.39AM,"Shooters, Mihango, Nairobi",1,-1.2881505,36.9511151,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,10:07.35AM,"Kenya, Mihango, Nairobi",1,-1.2882458,36.9508871,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,10:17.55AM,"Shooters, Mihango, Nairobi",1,-1.287993,36.9512853,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,11:31.28AM,"Unnamed Road, Ruai, Nairobi",1,-1.2545184,36.984495,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,11:15.01AM,"Eastern Bypass, Mihango, Nairobi",1,-1.2782297,36.9690583,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,11:09.16AM,"Eastern Bypass, Mihango, Nairobi",1,-1.2780663,36.9689141,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,11:04.32AM,"Eastern Bypass, Mihango, Nairobi",1,-1.2783862,36.9688157,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-16,11:18.28AM,"Eastern Bypass, Mihango, Nairobi",1,-1.2778795,36.9689572,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,1:57.07PM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4808142,36.9571627,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,1:51.00PM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4801606,36.9579692,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,1:01.43PM,"Athi River, Kajiado County, Kenya",1,-1.4811486,36.9572975,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,10:09.07AM,"Kenya, Embakasi, Nairobi",1,-1.3246153,36.8969884,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,12:53.42AM,"Miriam Road, Athi River, Kajiado County",1,-1.4727892,36.9578594,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,12:08.50AM,"20100, Athi River, Kajiado County",1,-1.4779569,36.9579416,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,11:58.09AM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4845384,36.9560204,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,11:52.51AM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4870635,36.9556191,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,11:29.09AM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4894147,36.9547981,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-18,11:42.04AM,"Nairobi - Namanga, Athi River, Kajiado County",1,-1.4885012,36.9552825,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-19,3:15.07PM,"Kamiti Road, Kahawa South, Githurai",1,-1.2124549,36.8933363,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-19,2:43.46PM,"123, Kamiti Road, Kahawa South",1,-1.2006252,36.8991792,Nairobi,Nairobi/Lower Eastern/Coast,37920,January,Samuel Mbithi
+2021-01-19,10:37.26AM,"Mombasa Road, Embakasi, Nairobi",1,-1.3283135,36.8840967,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-19,10:20.37AM,"Imara Daima, Embakasi, Nairobi",1,-1.3289311,36.8805124,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-19,1:27.13PM,"Makutano, Ndenderu, Kiambu County",1,-1.1922636,36.7451839,Nairobi,Nairobi/Lower Eastern/Coast,109920,January,Samuel Mbithi
+2021-01-19,12:56.23AM,"Makutano, Ndenderu, Kiambu County",1,-1.1922636,36.7451839,Nairobi,Nairobi/Lower Eastern/Coast,9480,January,Samuel Mbithi
+2021-01-19,12:46.28AM,"Pm Flats/ Runda View, Ruaka, Kiambu County",1,-1.2051071,36.7740391,Nairobi,Nairobi/Lower Eastern/Coast,11640,January,Samuel Mbithi
+2021-01-19,12:30.59AM,"River, Kiambu County, Kenya",1,-1.2217303,36.7800497,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-19,11:54.00AM,"Victoria Towers, 7th Floor, Kilimanjaro Avenue",1,-1.3009301,36.8157718,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,2:30.16PM,"Ndege Lane, Nairobi, Nairobi County",1,-1.3402936,36.7221735,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,2:51.54PM,"The Legend/Kwa Farasi, Nairobi, Nairobi County",1,-1.3209152,36.7107751,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,3:07.33PM,"Unnamed Road, Nairobi, Nairobi County",1,-1.3238929,36.7075828,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,2:21.07PM,"Don Bosco Church, Nairobi, Nairobi County",1,-1.3372549,36.7289113,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,2:07.23PM,"Kobil/Mokoyeti Road West, Nairobi, Nairobi County",1,-1.3407165,36.7538905,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,1:57.26PM,"Kobil/Mokoyeti Road West, Nairobi, Nairobi County",1,-1.3408852,36.7538537,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,3:36.55PM,"80, Ngong Road, Nairobi",1,-1.3213002,36.7092667,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-20,10:21.10AM,"Miriam Road, Athi River, Kajiado County",1,-1.4730378,36.9589765,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,2:59.12PM,"Rwenu, Ndenderu, Kiambu County",1,-1.1934507,36.7434826,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,2:47.34PM,"Banana Raini Road, Banana Hill, Kiambu County",1,-1.172533,36.7582864,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,2:25.14PM,"Kanunga Kiambaa Road, Banana Hill, Kiambu County",1,-1.1706908,36.7595608,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,2:08.43PM,"Total/Muchatha, Muchatha, Kiambu County",1,-1.1928217,36.7770223,Nairobi,Nairobi/Lower Eastern/Coast,5040,January,Samuel Mbithi
+2021-01-21,1:59.30PM,"Equity, Ruaka, Kiambu County",1,-1.2043167,36.778079,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,10:55.42AM,"Rosslyn Riviera, Kitisuru, Nairobi",1,-1.2155618,36.7968598,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,09:55.47AM,"Road C, Embakasi, Nairobi",1,-1.3262865,36.86805,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,08:57.53AM,"Tuskys, Embakasi, Nairobi",1,-1.317493,36.9168991,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,1:07.53PM,"Quickmart, Ruaka, Kiambu County",1,-1.206838,36.7833236,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,12:53.48AM,"Quickmart, Ruaka, Kiambu County",1,-1.2070472,36.7832799,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-21,12:33.36AM,"Makutano, Ndenderu, Kiambu County",1,-1.1922617,36.7451831,Nairobi,Nairobi/Lower Eastern/Coast,6000,January,Samuel Mbithi
+2021-01-21,11:51.20AM,"Gacharage Junction, Ruaka, Kiambu County",1,-1.2003188,36.7607742,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-22,3:16.19PM,"Nacico, Muthurwa-south east commercial park, Nairobi",1,-1.2877662,36.8366336,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-22,3:46.04PM,"Ladhies Road, Majengo, Nairobi",1,-1.2854179,36.8335169,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-22,3:45.31PM,"Ladhies Road, Majengo, Nairobi",1,-1.2854179,36.8335169,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-22,09:08.07AM,"Unnamed Road, Kitisuru, Nairobi",1,-1.2117633,36.7976024,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-23,12:56.02AM,"Kangundo Road, Mihango, Nairobi",1,-1.269819,36.9941319,Nairobi,Nairobi/Lower Eastern/Coast,24000,January,Samuel Mbithi
+2021-01-23,12:08.16AM,"Old Ruaka Road., Ruaka, Kiambu County",1,-1.2056753,36.7841386,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-23,10:23.33AM,"Total/Muchatha, Muchatha, Kiambu County",1,-1.1928214,36.7770217,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-23,12:20.36AM,"Kangundo Road, Mihango, Nairobi",1,-1.269819,36.9941319,Nairobi,Nairobi/Lower Eastern/Coast,9480,January,Samuel Mbithi
+2021-01-23,10:35.04AM,"Total/Muchatha, Muchatha, Kiambu County",1,-1.1928214,36.7770217,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,1:22.24PM,"Triangle, Kiserian, Kajiado County",1,-1.4277819,36.6904974,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,10:13.39AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3937526,36.7642508,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,10:05.59AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3894187,36.7687371,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,09:52.02AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3891507,36.7687578,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,12:08.42AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3960391,36.7284475,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,12:22.28AM,"Magadi Road, Kajiado County, Kenya",1,-1.4063626,36.7151202,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,12:43.46AM,"Rimpa Road, Kajiado County, Kenya",1,-1.4184055,36.7086652,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,1:03.36PM,"Kenya, Kiserian, Kajiado County",1,-1.4256264,36.6932005,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,10:49.37AM,"Magadi Road, Nairobi, Kajiado County",1,-1.3948366,36.7633215,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,11:09.37AM,"Kenya, Nairobi, Wilaya ya Kajiado",1,-1.3958089,36.7646117,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,11:16.45AM,"Steadmak Road, Ongata Rongai, Kajiado County",1,-1.3967358,36.7630133,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,10:59.45AM,"Nairobi, Kajiado County, Kenya",1,-1.3974236,36.7635393,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,11:39.18AM,"Naston, Nairobi, Kajiado County",1,-1.3972746,36.7581728,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,11:52.21AM,"Chap chap, Nairobi, Kajiado County",1,-1.3959791,36.7400409,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-25,11:26.08AM,"Barclays, Nairobi, Kajiado County",1,-1.3973056,36.759342,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-26,10:35.34AM,"Karen Road, Nairobi, Nairobi County",1,-1.3316234,36.7167827,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-26,09:12.20AM,"Karen Road, Nairobi, Nairobi County",1,-1.3161139,36.7190763,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-26,11:36.58AM,"Don Bosco Church, Nairobi, Nairobi County",1,-1.3374258,36.7293436,Nairobi,Nairobi/Lower Eastern/Coast,9860,January,Samuel Mbithi
+2021-01-27,1:06.43PM,"Fourth Parklands Avenue, Parklands, Nairobi",1,-1.2567638,36.8169231,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-27,12:47.45AM,"Nakumatt/Post Office, Parklands, Nairobi",1,-1.2605734,36.8181019,Nairobi,Nairobi/Lower Eastern/Coast,1500,January,Samuel Mbithi
+2021-01-27,11:49.32AM,"Kamiti Road, Kahawa South, Githurai",1,-1.2125372,36.8933193,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-27,12:28.22AM,"Pramukh Swami Avenue, Parklands, Nairobi",1,-1.2604148,36.8177935,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-27,11:06.23AM,"Kenya, Ruaraka, Nairobi",1,-1.2418172,36.8783236,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-27,11:16.52AM,"Samaki, Ruaraka, Nairobi",1,-1.2453123,36.8778527,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-28,1:31.54PM,"7, Munyu Road, City Square",1,-1.2846597,36.8279813,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-28,09:55.14AM,"Unnamed Road, Nairobi South, Nairobi",1,-1.2926787,36.8370619,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-28,09:36.23AM,"33, Pembe Street, Nairobi South",1,-1.2968198,36.8389128,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-28,10:46.43AM,"Kenya, Nairobi Central, Nairobi",1,-1.2849544,36.8244115,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-28,12:02.42AM,"Kenya, Nairobi Central, Nairobi",1,-1.284951,36.8244557,Nairobi,Nairobi/Lower Eastern/Coast,12000,January,Samuel Mbithi
+2021-01-29,2:35.02PM,"Kenya, Ruaraka, Nairobi",1,-1.2418174,36.8783242,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-29,1:04.44PM,"Eldoret Stage, Pumwani Road, Majengo",1,-1.285401,36.8346,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-01-30,10:24.34AM,"Aviation, Embakasi, Nairobi",1,-1.3185638,36.9095934,Nairobi,Nairobi/Lower Eastern/Coast,0,January,Samuel Mbithi
+2021-02-02,10:46.25AM,"Mlolongo, Machakos County, Kenya",2,-1.3962817,36.9420252,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,10:38.35AM,"Unnamed Road, Mlolongo, Machakos County",2,-1.3960315,36.941826,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,10:31.54AM,"Unnamed Road, Mlolongo, Machakos County",2,-1.390961,36.9400033,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,10:28.14AM,"Unnamed Road, Mlolongo, Machakos County",2,-1.3910149,36.940076,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,10:20.54AM,"Mlolongo, Machakos County, Kenya",2,-1.389672,36.9411756,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,11:31.07AM,"Unnamed Road, Athi River, Machakos County",2,-1.4331309,36.9823534,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,1:06.00PM,"Namanga Road, Athi River, Kajiado County",2,-1.4783871,36.9579346,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,1:00.10PM,"Namanga Road, Athi River, Kajiado County",2,-1.4783871,36.9579346,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,12:52.27AM,"20100, Athi River, Kajiado County",2,-1.477986,36.9578575,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,12:38.26AM,"Nairobi - Namanga, Athi River, Kajiado County",2,-1.488964,36.9553138,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,12:15.55AM,"Unnamed Road, Athi River, Kajiado County",2,-1.4809216,36.9574935,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-02,12:20.49AM,"Nairobi - Namanga, Athi River, Kajiado County",2,-1.4805953,36.9572618,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-03,09:34.07AM,"1554, Embakasi, Nairobi",2,-1.3123982,36.8987393,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,2:40.05PM,"Ruiru Kamiti Road, Ruiru, Kiambu County",2,-1.1483609,36.9586368,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,2:23.23PM,"Kenya, Ruiru, Kiambu County",2,-1.1455521,36.9575689,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,2:05.25PM,"C65, Ruiru, Kiambu County",2,-1.1460459,36.9602232,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,1:51.17PM,"C65, Ruiru, Kiambu County",2,-1.146247,36.9603433,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,11:55.42AM,"Eastern Bypass, Ruiru, Kiambu County",2,-1.1661535,36.9602944,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,12:28.13AM,"Kihunguro, Ruiru, Kiambu County",2,-1.1589702,36.958644,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,1:31.06PM,"Ruiru Kamiti Road, Ruiru, Kiambu County",2,-1.1486158,36.9602524,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,11:45.28AM,"479, Amani Court, Embakasi",2,-1.3099157,36.8957761,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,12:04.45AM,"Kihunguro, Ruiru, Kiambu County",2,-1.1590264,36.9586724,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-04,11:32.44AM,"479, Amani Court, Embakasi",2,-1.3099157,36.8957761,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-05,2:02.14PM,"Unnamed Road, Nairobi, Nairobi County",2,-1.3232722,36.7069285,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-05,10:01.24AM,"Forest Edge Road, Nairobi, Nairobi County",2,-1.3414936,36.7670347,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-05,10:37.59AM,"Great Jubilee Centre, Nairobi, Nairobi County",2,-1.3408992,36.7576702,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-05,10:34.36AM,"Great Jubilee Centre, Nairobi, Nairobi County",2,-1.3408992,36.7576702,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,2:16.06PM,"Thika, Kiambu County, Kenya",2,-1.0437951,37.0945246,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,3:11.28PM,"Uhuru Street, Thika, Kiambu County",2,-1.035676,37.0753959,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,12:51.22AM,"Garissa Road, Thika, Kiambu County",2,-1.0557293,37.1139507,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,1:20.07PM,"A3, Thika, Kiambu County",2,-1.0587154,37.119213,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,1:48.56PM,"A3, Kiambu County, Kenya",2,-1.0623207,37.1668333,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,4:30.21PM,"X37G+Q6, Thika, Kiambu County",2,-1.0356034,37.0755453,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,4:06.11PM,"Uhuru Street, Thika, Kiambu County",2,-1.0356676,37.0754122,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,10:45.46AM,"Kenya, Ruiru, Kiambu County",2,-1.1455837,36.9575406,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,11:33.31AM,"30, A2, Kenyatta Road",2,-1.1013219,37.023427,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,12:14.10AM,"Garissa Road, Thika, Kiambu County",2,-1.0525077,37.1007053,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-08,11:40.50AM,"30, A2, Kenyatta Road",2,-1.1013219,37.023427,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,2:52.53PM,"Marurui/JuaKali, Nairobi, Nairobi County",2,-1.2118215,36.8734083,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,12:33.42AM,"Kenya, Kitisuru, Nairobi",2,-1.2115759,36.7946631,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,3:14.09PM,"Gachichio Road, Nairobi, Kenya",2,-1.1900472,36.8964649,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,3:24.52PM,"Kamiti Road, Kahawa South, Githurai",2,-1.2107072,36.8937853,Nairobi,Nairobi/Lower Eastern/Coast,18960,February,Samuel Mbithi
+2021-02-09,3:29.57PM,"Kamiti Road, Kahawa South, Githurai",2,-1.2107072,36.8937853,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,09:41.48AM,"Limuru Road, Ngara West, Nairobi",2,-1.2700042,36.8201734,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,10:41.25AM,"Itara, Kiambu County, Kenya",2,-1.1854196,36.8390727,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,11:44.22AM,"Thindigwa, Kiambu County, Kenya",2,-1.2002794,36.8344892,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,11:10.53AM,"Unnamed Road, Kiambu, Kiambu County",2,-1.1703991,36.8281349,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-09,11:29.55AM,"Kiambu Road, Kiambu, Kiambu County",2,-1.1695012,36.8270843,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-10,2:29.34PM,"7, Biashara Street, Kiambu",2,-1.172499,36.8312512,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-10,4:54.23PM,"Sarit Centre, Karuna Road, Spring Valley",2,-1.2613783,36.802073,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-10,12:35.03AM,"Tuskys, Embakasi, Nairobi",2,-1.3174793,36.9168873,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-11,1:07.07PM,"Ngong Road, Woodley, Nairobi",2,-1.3006478,36.7558931,Nairobi,Nairobi/Lower Eastern/Coast,6000,February,Samuel Mbithi
+2021-02-11,1:36.29PM,"Karandini Road, Riruta, Nairobi",2,-1.2994919,36.7571469,Nairobi,Nairobi/Lower Eastern/Coast,7800,February,Samuel Mbithi
+2021-02-11,09:54.11AM,"Total Karen, Nairobi, Nairobi County",2,-1.339226,36.7400855,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-11,12:15.04AM,"Kenya, Woodley, Nairobi",2,-1.3071891,36.7369959,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-11,12:31.01AM,"Kenya, Nairobi, Nairobi County",2,-1.3014605,36.7534934,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-11,11:47.02AM,"Ngong Road, Karen, Nairobi",2,-1.3347919,36.6730718,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-11,10:41.30AM,"2, Karen Road, Nairobi",2,-1.3295092,36.7146901,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-12,11:33.59AM,"Unnamed Road, Mlolongo, Machakos County",2,-1.3960321,36.9418347,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-12,10:50.12AM,"Nairobi - Namanga, Athi River, Kajiado County",2,-1.4806546,36.9576333,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:50.59AM,"Kangundo Road, Ruai, Nairobi",2,-1.2705493,36.9959083,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:42.45AM,"Fun City, Mihango, Nairobi",2,-1.2748257,36.9723773,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:33.28AM,"Fun City, Mihango, Nairobi",2,-1.2748257,36.9723773,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:23.13AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:23.13AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:13.05AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,09:05.37AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,08:50.52AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,08:50.52AM,"Keza, Mihango, Nairobi",2,-1.2858769,36.9550312,Nairobi,Nairobi/Lower Eastern/Coast,10820,February,Samuel Mbithi
+2021-02-13,09:57.12AM,"Dune, Nairobi, Nairobi County",2,-1.2699747,36.994781,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,10:34.01AM,"Kangundo Road, Ruai, Nairobi",2,-1.2728702,36.9990193,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,10:12.10AM,"Kenya, Mihango, Nairobi",2,-1.2718507,36.9971015,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-13,10:20.32AM,"Kenya, Mihango, Nairobi",2,-1.2717455,36.9971656,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-15,10:04.28AM,"Lunga Lunga Road, Industrial Area, Nairobi",2,-1.3019946,36.8850574,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-15,10:38.10AM,"Corrugated Sheet Ltd Depot, Athi River Road, Industrial Area",2,-1.2996403,36.8382416,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-15,12:00.41AM,"33, Pembe Street, Nairobi South",2,-1.2969396,36.8389017,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-15,11:00.31AM,"Maruti Steel Ltd, Athi River Road, Industrial Area",2,-1.2989967,36.8391476,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-15,11:27.18AM,"14, Bamburi Road, Industrial Area",2,-1.3009465,36.8402841,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-16,1:06.11PM,"Gigiri Ln, Kitisuru, Nairobi",2,-1.2328464,36.8073794,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-16,12:29.41AM,"Kiambu Road, Kiambu, Kiambu County",2,-1.1703639,36.8281504,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-16,3:00.07PM,"Sarit Centre, Karuna Road, Spring Valley",2,-1.2608513,36.8013525,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-16,11:52.40AM,"Market Crescent, Kiambu, Kiambu County",2,-1.1693204,36.8280777,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-16,10:53.08AM,"First Choice Shopping Arcade, Kiambu Road, Kiambu",2,-1.1691244,36.8270177,Nairobi,Nairobi/Lower Eastern/Coast,65280,February,Samuel Mbithi
+2021-02-17,12:35.49AM,"Kangundo Road, Tala, Machakos County",2,-1.2673056,37.317226,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,1:01.15PM,"Kangundo Road, Tala, Machakos County",2,-1.2671579,37.3188874,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,1:10.20PM,"Kangundo Road, Tala, Machakos County",2,-1.2671621,37.3188941,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,2:39.40PM,"Mbolu Malu Road, Machakos, Machakos County",2,-1.5180943,37.2657287,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,3:16.28PM,"90100, Mbolu Malu Road, Machakos",2,-1.5187113,37.2691892,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,09:26.50AM,"Quarry, Mihango, Nairobi",2,-1.2695928,36.9781513,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,10:02.27AM,"Kangundo Road, Nairobi County, Kenya",2,-1.2809853,37.0663622,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,10:19.41AM,"Kangundo Road, Machakos County, Kenya",2,-1.2836602,37.0941894,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,11:30.13AM,"Kangundo Road, Machakos County, Kenya",2,-1.2860845,37.1792811,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,10:30.28AM,"Kangundo Road, Machakos County, Kenya",2,-1.2836295,37.0975218,Nairobi,Nairobi/Lower Eastern/Coast,18960,February,Samuel Mbithi
+2021-02-17,11:07.43AM,"Malaa, Kangundo Road, Machakos County",2,-1.2800151,37.1380878,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-17,10:44.04AM,"Kangundo Road, Machakos County, Kenya",2,-1.2840267,37.0979667,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,2:06.20PM,"Magadi Road, Kajiado County, Kenya",2,-1.4160998,36.7086959,Nairobi,Nairobi/Lower Eastern/Coast,8200,February,Samuel Mbithi
+2021-02-18,2:19.02PM,"Magadi Road, Kajiado County, Kenya",2,-1.4160998,36.7086959,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,3:22.00PM,"Naston, Nairobi, Kajiado County",2,-1.3973365,36.7582224,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,12:58.19AM,"Chap chap, Nairobi, Kajiado County",2,-1.3960375,36.7400302,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,5:00.44PM,"Karandini Road, Riruta, Nairobi",2,-1.2998757,36.7566709,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,08:25.17AM,"Tana House, Nairobi, Nairobi County",2,-1.3232789,36.7073506,Nairobi,Nairobi/Lower Eastern/Coast,36900,February,Samuel Mbithi
+2021-02-18,12:26.58AM,"Faculty of Engineering, Nairobi, Nairobi County",2,-1.3810525,36.7676692,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,10:43.24AM,"Rhino House, Nairobi, Nairobi County",2,-1.329139,36.7171372,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-18,11:18.29AM,"Don Bosco Church, Nairobi, Nairobi County",2,-1.3374091,36.7293353,Nairobi,Nairobi/Lower Eastern/Coast,7800,February,Samuel Mbithi
+2021-02-18,11:18.29AM,"Don Bosco Church, Nairobi, Nairobi County",2,-1.3374091,36.7293353,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,1:55.41PM,"827, Syokimau Avenue, Machakos",2,-1.5223944,37.2696492,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,2:09.22PM,"Machakos Bus Stop, Machakos, Eastern",2,-1.5213609,37.2679553,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,1:27.54PM,"Syokimau Avenue, Machakos, Machakos County",2,-1.5205028,37.2696384,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,3:23.00PM,"Machakos Wote Road, Machakos, Machakos County",2,-1.5231191,37.2660038,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,1:40.08PM,"Bus and Matatu Stand, Syokimau Avenue, Machakos",2,-1.5210813,37.2696243,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-19,7:36.17PM,"479, Amani Court, Embakasi",2,-1.3100801,36.8948056,Nairobi,Nairobi/Lower Eastern/Coast,1560,February,Samuel Mbithi
+2021-02-19,09:27.23AM,"479, Amani Court, Embakasi",2,-1.3098373,36.8948056,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-20,12:57.59AM,"Unnamed Road, Mihango, Nairobi",2,-1.2765417,36.966345,Nairobi,Nairobi/Lower Eastern/Coast,4740,February,Samuel Mbithi
+2021-02-20,09:37.18AM,"Don Bosco Church, Nairobi, Nairobi County",2,-1.3374169,36.7293194,Nairobi,Nairobi/Lower Eastern/Coast,22450,February,Samuel Mbithi
+2021-02-20,07:55.31AM,"Family Bank, Mihango, Nairobi",2,-1.2803915,36.964228,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-20,10:15.41AM,"Don Bosco Church, Nairobi, Nairobi County",2,-1.3374169,36.7293194,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,1:20.52PM,"Limuru Town., Kiambu County, Kenya",2,-1.1091541,36.6413329,Nairobi,Nairobi/Lower Eastern/Coast,5710,February,Samuel Mbithi
+2021-02-22,1:39.34PM,"Kwa DO, Kiambu County, Kenya",2,-1.1078334,36.639248,Nairobi,Nairobi/Lower Eastern/Coast,24000,February,Samuel Mbithi
+2021-02-22,2:06.08PM,"Gitungo Road, Limuru Town., Kiambu County",2,-1.1083239,36.6409549,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,1:06.50PM,"Limuru Town., Kiambu County, Kenya",2,-1.1098564,36.641624,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,11:29.02AM,"Makutano, Ndenderu, Kiambu County",2,-1.1922553,36.7451869,Nairobi,Nairobi/Lower Eastern/Coast,4200,February,Samuel Mbithi
+2021-02-22,12:21.52AM,"Limuru Bus Stop, Limuru Road, Kiambu County",2,-1.1503889,36.6673502,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:45.50AM,"Kenya, Embakasi, Nairobi",2,-1.3195136,36.8984447,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:47.45AM,"Kenya, Embakasi, Nairobi",2,-1.3195486,36.8983733,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:55.35AM,"Kobil, Embakasi, Nairobi",2,-1.3209405,36.8985028,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:55.35AM,"Kobil, Embakasi, Nairobi",2,-1.3209405,36.8985028,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:55.35AM,"Kobil, Embakasi, Nairobi",2,-1.3209405,36.8985028,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,08:55.35AM,"Kobil, Embakasi, Nairobi",2,-1.3209405,36.8985028,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,10:00.40AM,"Thithino House Building, Kiambu Road, Kiambu",2,-1.1682642,36.8260894,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,10:04.53AM,"Kiambu, Kiambu County, Kenya",2,-1.1682511,36.8260189,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-22,09:10.27AM,"Caltex Road, Donholm, Nairobi",2,-1.3017069,36.8882806,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,2:16.52PM,"Haile Selassie Road, Thika, Kiambu County",2,-1.0316603,37.073243,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,12:51.53AM,"C65, Ruiru, Kiambu County",2,-1.1462076,36.9603088,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,1:00.32PM,"C65, Ruiru, Kiambu County",2,-1.1462076,36.9603088,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,3:20.44PM,"Uhuru Street, Thika, Kiambu County",2,-1.0356599,37.0754026,Nairobi,Nairobi/Lower Eastern/Coast,27120,February,Samuel Mbithi
+2021-02-23,12:09.11AM,"Hilton, Ruiru, Kiambu County",2,-1.1507555,36.9428567,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,10:02.39AM,"Garden Estate Road, Balozi Estate, Nairobi",2,-1.2342341,36.8723568,Nairobi,Nairobi/Lower Eastern/Coast,6840,February,Samuel Mbithi
+2021-02-23,09:33.46AM,"Thika Road, Balozi Estate, Nairobi",2,-1.2351621,36.8721267,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,11:38.01AM,"Ruiru Kamiti Road, Ruiru, Kiambu County",2,-1.1511923,36.934386,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,11:14.47AM,"Unnamed Road, Kiambu County, Kenya",2,-1.163537,36.8796786,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,10:32.33AM,"Kamiti Road, Kahawa South, Githurai",2,-1.2125445,36.8932495,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,10:43.58AM,"Kamiti Road, Kahawa South, Githurai",2,-1.2125445,36.8932495,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-23,10:50.14AM,"Kamiti Road, Kahawa South, Githurai",2,-1.2125445,36.8932495,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-24,12:12.07AM,"197, Lenana Road, Kilimani",2,-1.2886174,36.7913241,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-24,3:39.42PM,"Kiambu Road, Limuru Town., Kiambu County",2,-1.1108662,36.6431995,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-24,3:16.30PM,"Ruaka, Ruaka, Kiambu County",2,-1.2076537,36.7864472,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-24,3:15.35PM,"Ruaka, Ruaka, Kiambu County",2,-1.2076537,36.7864472,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-24,2:23.26PM,"Ruaka, Ruaka, Kiambu County",2,-1.2076537,36.7864472,Nairobi,Nairobi/Lower Eastern/Coast,128900,February,Samuel Mbithi
+2021-02-24,11:09.45AM,"Pramukh Swami Avenue, Parklands, Nairobi",2,-1.2604148,36.8177935,Nairobi,Nairobi/Lower Eastern/Coast,24800,February,Samuel Mbithi
+2021-02-25,3:45.02PM,"Kenya, Nairobi, Machakos County",2,-1.4191532,36.9494668,Nairobi,Nairobi/Lower Eastern/Coast,130000,February,Samuel Mbithi
+2021-02-25,2:08.38PM,"33, Pembe Street, Nairobi South",2,-1.2972204,36.8391978,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-25,2:07.39PM,"33, Pembe Street, Nairobi South",2,-1.2972204,36.8391978,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-26,10:30.02AM,"kutch Road, Mlolongo, Machakos County",2,-1.3853192,36.9395113,Nairobi,Nairobi/Lower Eastern/Coast,3160,February,Samuel Mbithi
+2021-02-26,09:59.50AM,"Unnamed Road, Mlolongo, Machakos County",2,-1.3959922,36.9418507,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-26,12:17.44AM,"Miriam Road, Athi River, Kajiado County",2,-1.4730702,36.9587525,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-26,10:30.02AM,"kutch Road, Mlolongo, Machakos County",2,-1.3853192,36.9395113,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-27,12:02.39AM,"Quickmart, Ruiru, Kiambu County",2,-1.1694403,36.9702891,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-27,12:07.04AM,"Kamakis, Ruiru, Kiambu County",2,-1.1715349,36.9727443,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-27,10:40.26AM,"Twisters, Umoja, Nairobi",2,-1.2568409,36.9250537,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-27,10:57.22AM,"Kamakis, Ruiru, Kiambu County",2,-1.1715349,36.9727443,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-02-27,10:33.38AM,"Twisters, Umoja, Nairobi",2,-1.2568409,36.9250537,Nairobi,Nairobi/Lower Eastern/Coast,4000,February,Samuel Mbithi
+2021-02-27,10:03.07AM,"Twisters, Umoja, Nairobi",2,-1.2568409,36.9250537,Nairobi,Nairobi/Lower Eastern/Coast,0,February,Samuel Mbithi
+2021-03-01,2:59.28PM,"197, Lenana Road, Kilimani",3,-1.2882855,36.7911681,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-01,09:52.43AM,"Kemsa, Embakasi, Nairobi",3,-1.3148013,36.9166502,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-01,11:45.08AM,"33, Pembe Street, Nairobi South",3,-1.2969518,36.8389883,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-01,11:12.10AM,"Ink print Building, P. O. Box 54421, Nairobi South, Nairobi",3,-1.2970793,36.8359363,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-02,1:50.39PM,"45, Lunga Lunga Road, Industrial Area",3,-1.3076807,36.8701581,Nairobi,Nairobi/Lower Eastern/Coast,1644800,March,Samuel Mbithi
+2021-03-03,2:24.44PM,"Ruaka, Ruaka, Kiambu County",3,-1.2076501,36.7864501,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-03,1:55.47PM,"Gigiri Ln, Kitisuru, Nairobi",3,-1.2328731,36.8074159,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-03,1:06.21PM,"33, Pembe Street, Nairobi South",3,-1.296946,36.8393247,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-03,4:47.44PM,"Nairobi, Kitisuru, Nairobi County",3,-1.2105323,36.7960153,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-04,2:08.15PM,"Don Bosco Church, Nairobi, Nairobi County",3,-1.3374172,36.7293544,Nairobi,Nairobi/Lower Eastern/Coast,17870,March,Samuel Mbithi
+2021-03-04,12:50.34AM,"Darosa Plaza, Nairobi, Nairobi County",3,-1.3270659,36.7174018,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-09,10:22.24AM,"Haile Selassie Road, Moja, Mombasa",3,-4.0601728,39.6706565,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-10,12:16.06AM,"Kenya, Kwakiziwi, Mombasa",3,-4.0452489,39.6616182,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-10,3:06.46PM,"Soud Street, Moja, Mombasa",3,-4.060427,39.671371,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-10,09:52.44AM,"B8, Kilifi County, Kenya",3,-3.9104785,39.7647719,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-10,10:13.31AM,"Play Station 3, Mombasa, Kilifi County",3,-3.9148645,39.761336,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-10,10:09.33AM,"Play Station 3, Mombasa, Kilifi County",3,-3.9148669,39.7613327,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-11,2:03.23PM,"Unnamed Road, Ukunda, Kwale County",3,-4.2829832,39.5700069,Nairobi,Nairobi/Lower Eastern/Coast,58320,March,Samuel Mbithi
+2021-03-11,3:12.47PM,"Ukunda-Ramisi Road, Ukunda, Kwale County",3,-4.2820006,39.5672159,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-11,2:58.28PM,"Ukunda-Ramisi Road, Ukunda, Kwale County",3,-4.2803135,39.5675709,Nairobi,Nairobi/Lower Eastern/Coast,21600,March,Samuel Mbithi
+2021-03-11,2:33.50PM,"Unnamed Road, Kwale County, Kenya",3,-4.2829973,39.5698771,Nairobi,Nairobi/Lower Eastern/Coast,15960,March,Samuel Mbithi
+2021-03-11,12:33.42AM,"Ukunda-Ramisi Road, Ukunda, Kwale County",3,-4.2882691,39.5657925,Nairobi,Nairobi/Lower Eastern/Coast,14900,March,Samuel Mbithi
+2021-03-12,12:52.16AM,"1, B8, Kisauni",3,-4.0266981,39.6953808,Nairobi,Nairobi/Lower Eastern/Coast,9600,March,Samuel Mbithi
+2021-03-12,1:48.05PM,"Mombasa, Kinyozi, Mombasa County",3,-4.059558,39.6620341,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-12,2:29.15PM,"Dar Es Salam Road, Kilindini, Mombasa",3,-4.0584283,39.6546401,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-12,1:16.48PM,"Nyali Road, Kongowea, Mombasa",3,-4.0335317,39.6887392,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-12,11:18.23AM,"B8, Mtwapa, Kilifi County",3,-3.9443708,39.7449861,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-12,11:10.02AM,"B8, Mtwapa, Kilifi County",3,-3.9443139,39.7450203,Nairobi,Nairobi/Lower Eastern/Coast,10200,March,Samuel Mbithi
+2021-03-13,10:38.00AM,"Mombasa County, Bamburi, Mombasa",3,-4.0024945,39.7025664,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-18,2:34.15PM,"Malindi, Kilifi County, Kenya",3,-3.2224826,40.1130631,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-18,2:26.21PM,"Malindi, Kilifi County, Kenya",3,-3.2224826,40.1130631,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-18,3:43.59PM,"B8, Malindi, Kilifi County",3,-3.2213396,40.1133357,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-18,3:38.17PM,"B8, Malindi, Kilifi County",3,-3.2213055,40.1135184,Nairobi,Nairobi/Lower Eastern/Coast,33000,March,Samuel Mbithi
+2021-03-22,1:44.07PM,"197, Lenana Road, Kilimani",3,-1.2885246,36.791544,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,2:09.25PM,"Nairobi, Kilimani, Nairobi County",3,-1.2928938,36.7877301,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,2:27.30PM,"Equity Ayani, Woodley, Nairobi",3,-1.310905,36.7757224,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,2:56.13PM,"Kenya Sweets Limited, Mombasa Road, Embakasi",3,-1.3343166,36.8812603,Nairobi,Nairobi/Lower Eastern/Coast,2500,March,Samuel Mbithi
+2021-03-22,3:10.35PM,"Unnamed Road, Embakasi, Nairobi",3,-1.317206,36.9038803,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,10:20.38AM,"Road C, Embakasi, Nairobi",3,-1.3262836,36.8679197,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,09:57.12AM,"Tuskys, Embakasi, Nairobi",3,-1.3174913,36.9168757,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-22,12:14.53AM,"Ink print Building, P. O. Box 54421, Nairobi South, Nairobi",3,-1.2969849,36.8358461,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-23,4:15.26PM,"497, Amani Court, Embakasi",3,-1.3087709,36.8950892,Nairobi,Nairobi/Lower Eastern/Coast,57600,March,Samuel Mbithi
+2021-03-23,4:33.51PM,"497, Amani Court, Embakasi",3,-1.3087735,36.8950949,Nairobi,Nairobi/Lower Eastern/Coast,12485,March,Samuel Mbithi
+2021-03-23,12:04.42AM,"Nairobi - Namanga, Athi River, Kajiado County",3,-1.4813503,36.9569707,Nairobi,Nairobi/Lower Eastern/Coast,7680,March,Samuel Mbithi
+2021-03-23,12:11.27AM,"Nairobi - Namanga, Athi River, Kajiado County",3,-1.4891511,36.9552473,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-25,2:16.58PM,"38, Nanyuki Road, Industrial Area",3,-1.3070962,36.8706009,Nairobi,Nairobi/Lower Eastern/Coast,45780,March,Samuel Mbithi
+2021-03-25,3:49.23PM,"Unnamed Road, Embakasi, Nairobi",3,-1.3182833,36.9028171,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-25,09:25.30AM,"Marimbi Street, California, Marimbi Street, Eastleigh South",3,-1.2826804,36.8504242,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-25,10:16.46AM,"Nairobi, Industrial Area, Nairobi County",3,-1.3022467,36.8458113,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-25,10:35.03AM,"20, Funzi Road, Industrial Area",3,-1.3026959,36.8452828,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-25,11:05.38AM,"Jagoo Lane, Ofafa, Nairobi",3,-1.2956898,36.8608147,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-26,09:59.36AM,"Martin Shikiku Lane, Syokimau, Machakos County",3,-1.3662546,36.933088,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-26,10:56.23AM,"Unnamed Road, Nairobi, Nairobi County",3,-1.353425,36.9030781,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-27,1:01.02PM,"Mwereri Road, Athi River, Kajiado County",3,-1.4760238,36.9576333,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-27,1:23.57PM,"Kenya, Athi River, Kajiado County",3,-1.5179108,36.9482294,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-27,10:39.46AM,"Athi River, Kajiado County, Kenya",3,-1.4808804,36.9573477,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-27,10:44.54AM,"Athi River, Kajiado County, Kenya",3,-1.4808804,36.9573477,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-27,10:41.04AM,"Athi River, Kajiado County, Kenya",3,-1.4808804,36.9573477,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-29,12:13.14AM,"34, Nanyuki Road, Industrial Area",3,-1.3068707,36.8695922,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-29,10:13.29AM,"47, Lunga Lunga Road, Industrial Area",3,-1.3076401,36.8701716,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-03-29,11:31.14AM,"53, Lunga Lunga Road, Industrial Area",3,-1.3074114,36.8716668,Nairobi,Nairobi/Lower Eastern/Coast,0,March,Samuel Mbithi
+2021-04-01,09:01.27AM,"Unnamed Road, Nairobi, Nairobi County",4,-1.3239736,36.7074692,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-01,09:07.58AM,"Unnamed Road, Nairobi, Nairobi County",4,-1.3239736,36.7074692,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-01,09:12.13AM,"Unnamed Road, Nairobi, Nairobi County",4,-1.3239736,36.7074692,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-01,11:53.06AM,"Nairobi, Nairobi County, Kenya",4,-1.3274235,36.7173392,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-01,11:53.06AM,"Nairobi, Nairobi County, Kenya",4,-1.3274235,36.7173392,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-01,12:26.34AM,"Don Bosco, Nairobi, Nairobi County",4,-1.337029,36.7279007,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-03,11:01.14AM,"47, Lunga Lunga Road, Industrial Area",4,-1.3076328,36.8701715,Nairobi,Nairobi/Lower Eastern/Coast,2500,April,Samuel Mbithi
+2021-04-06,10:21.30AM,"Tuskys, Embakasi, Nairobi",4,-1.317463,36.9168704,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-07,3:31.54PM,"Solataa ltd, Dar Es Salaam Road, Nairobi South",4,-1.3045082,36.8391114,Nairobi,Nairobi/Lower Eastern/Coast,1479900,April,Samuel Mbithi
+2021-04-07,4:14.59PM,"Ring Road, Nairobi, Nairobi County",4,-1.2834579,36.8334466,Nairobi,Nairobi/Lower Eastern/Coast,10000,April,Samuel Mbithi
+2021-04-08,2:51.46PM,"Makutano - Kitui Road, Machakos, Machakos County",4,-1.5182026,37.2619313,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,3:34.42PM,"Makutano - Kitui Road, Machakos, Machakos County",4,-1.5182026,37.2619313,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,4:00.29PM,"Machakos Bus Stop, Machakos, Eastern",4,-1.521172,37.2684743,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,4:03.22PM,"Machakos Bus Stop, Machakos, Eastern",4,-1.521172,37.2684743,Nairobi,Nairobi/Lower Eastern/Coast,22400,April,Samuel Mbithi
+2021-04-08,3:55.55PM,"Machakos Bus Stop, Machakos, Eastern",4,-1.521172,37.2684743,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,1:05.04PM,"Eastern Bypass, Ruai, Nairobi",4,-1.247681,36.9881878,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,12:59.59AM,"Eastern Bypass, Ruai, Nairobi",4,-1.247681,36.9881878,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,10:43.03AM,"Eastern Bypass, Ruiru, Kiambu County",4,-1.1650215,36.9599251,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,10:53.46AM,"Eastern Bypass, Ruiru, Kiambu County",4,-1.1650215,36.9599251,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,11:34.47AM,"Quickmart, Ruiru, Kiambu County",4,-1.1694551,36.9700493,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-08,11:34.47AM,"Quickmart, Ruiru, Kiambu County",4,-1.1694551,36.9700493,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,2:23.02PM,"C65, Githunguri, Kiambu County",4,-1.0568322,36.7779596,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,3:31.32PM,"C65, Ruiru, Kiambu County",4,-1.143031,36.9579692,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,4:33.25PM,"Gachororo Road, Juja, Kiambu County",4,-1.0880738,37.0237625,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,08:57.28AM,"Tuskys, Embakasi, Nairobi",4,-1.3174913,36.9168726,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,12:59.44AM,"Corner Shopping Arcade, Kiambu, Kiambu County",4,-1.1688265,36.8273903,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,11:33.41AM,"Itara, Kiambu County, Kenya",4,-1.1854281,36.839046,Nairobi,Nairobi/Lower Eastern/Coast,15800,April,Samuel Mbithi
+2021-04-09,11:33.41AM,"Itara, Kiambu County, Kenya",4,-1.1854281,36.839046,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,12:05.57AM,"900, Kiambu Road, Kiambu",4,-1.1709647,36.8281711,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-09,12:27.14AM,"Kiambu Road, Kiambu, Kiambu County",4,-1.1697018,36.8279864,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-10,12:51.24AM,"Kenya, Embakasi, Nairobi",4,-1.3245546,36.8969217,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-10,12:33.57AM,"Liban House, Airport North Road, Embakasi",4,-1.3253691,36.8970829,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-10,10:35.24AM,"Reliance, Nairobi, Nairobi County",4,-1.3562751,36.9058967,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-10,10:30.24AM,"Nairobi, Nairobi County, Kenya",4,-1.3574571,36.9042664,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-12,1:57.30PM,"Limuru Road, Ruaka, Kiambu County",4,-1.2009109,36.7611232,Nairobi,Nairobi/Lower Eastern/Coast,25800,April,Samuel Mbithi
+2021-04-12,1:57.30PM,"Limuru Road, Ruaka, Kiambu County",4,-1.2009109,36.7611232,Nairobi,Nairobi/Lower Eastern/Coast,15800,April,Samuel Mbithi
+2021-04-12,4:00.14PM,"Ngong Road, Woodley, Nairobi",4,-1.3004545,36.7563814,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-12,4:30.13PM,"Unnamed Road, Karen, Nairobi",4,-1.3207071,36.7045092,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-12,09:20.52AM,"Washroom, Embakasi, Nairobi",4,-1.3118138,36.8927888,Nairobi,Nairobi/Lower Eastern/Coast,13140,April,Samuel Mbithi
+2021-04-12,10:35.50AM,"Soweto, Umoja, Nairobi",4,-1.2811143,36.9148091,Nairobi,Nairobi/Lower Eastern/Coast,5500,April,Samuel Mbithi
+2021-04-12,11:49.12AM,"St., Mihango, Nairobi",4,-1.2497511,36.9515067,Nairobi,Nairobi/Lower Eastern/Coast,13500,April,Samuel Mbithi
+2021-04-13,2:18.43PM,"Unnamed Road, Kitisuru, Nairobi",4,-1.2115095,36.794703,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-13,3:46.24PM,"Maina Road, Kahawa South, Githurai",4,-1.2006041,36.8997719,Nairobi,Nairobi/Lower Eastern/Coast,12630,April,Samuel Mbithi
+2021-04-13,3:46.24PM,"Maina Road, Kahawa South, Githurai",4,-1.2006041,36.8997719,Nairobi,Nairobi/Lower Eastern/Coast,15800,April,Samuel Mbithi
+2021-04-13,10:37.10AM,"Unnamed Road, Umoja, Nairobi",4,-1.274921,36.9082492,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-13,11:21.19AM,"Ruaraka, Nairobi, Nairobi County",4,-1.2418662,36.8783469,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-13,11:54.31AM,"Baba Dogo Terminal, Ruaraka, Nairobi",4,-1.2447279,36.8874105,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-13,12:13.17AM,"Sai Raj, Ruaraka, Nairobi",4,-1.2431276,36.8809926,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-14,1:01.48PM,"Rimpa Road, Kajiado County, Kenya",4,-1.418406,36.7086761,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-14,4:24.40PM,"National Cereals And Produce Board,P.O. Box 30586, Enterprise Road, Nairobi South",4,-1.296473,36.835066,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-14,12:34.36AM,"Magadi Road, Kajiado County, Kenya",4,-1.4063852,36.7151395,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-14,12:31.22AM,"Magadi Road, Kajiado County, Kenya",4,-1.4063852,36.7151395,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-14,12:06.24AM,"Magadi Road, Ongata Rongai, Kajiado County",4,-1.3966957,36.7606251,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,2:12.36PM,"Nairobi - Namanga, Bisil, Kajiado County",4,-2.0971254,36.7916219,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,4:02.53PM,"Nairobi - Namanga, Athi River, Kajiado County",4,-1.485075,36.9559541,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,09:35.56AM,"Matharau Street, Mlolongo, Machakos County",4,-1.3918849,36.939832,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,09:35.56AM,"Matharau Street, Mlolongo, Machakos County",4,-1.3918849,36.939832,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,10:56.48AM,"Unnamed Road, Kajiado County, Kenya",4,-1.6866638,36.8500879,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,11:07.13AM,"Seising, Kajiado County, Kenya",4,-1.6860607,36.8440337,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,1:01.47PM,"Unnamed Road, Kajiado, Kajiado County",4,-1.8419469,36.78471,Nairobi,Nairobi/Lower Eastern/Coast,27300,April,Samuel Mbithi
+2021-04-15,1:31.07PM,"Unnamed Road, Kajiado, Kajiado County",4,-1.8418949,36.7889595,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-15,1:12.44PM,"Unnamed Road, Kajiado, Kajiado County",4,-1.8427888,36.7847648,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-16,10:57.58AM,"45, Lunga Lunga Road, Industrial Area",4,-1.3076497,36.8702077,Nairobi,Nairobi/Lower Eastern/Coast,691000,April,Samuel Mbithi
+2021-04-16,11:31.00AM,"33, Pembe Street, Nairobi South",4,-1.2971956,36.8391888,Nairobi,Nairobi/Lower Eastern/Coast,557342,April,Samuel Mbithi
+2021-04-19,1:17.53PM,"KCA University, Ruaraka, Nairobi",4,-1.253642,36.8589552,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-19,1:43.09PM,"Central Administration Complex, Kahawa North, Nairobi",4,-1.1795237,36.9359167,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-19,12:24.53AM,"KCA, Ruaraka, Nairobi",4,-1.2529503,36.8588318,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-20,10:57.22AM,"Unnamed Road, Kahawa North, Nairobi",4,-1.1790795,36.9378165,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-20,11:43.07AM,"Eastern By Pass, Ruiru, Kiambu County",4,-1.1608235,36.9432225,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-20,11:55.29AM,"Unnamed Road, Ruiru, Kiambu County",4,-1.1524846,36.9233703,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-21,2:53.57PM,"Busia Road, Nairobi South, Nairobi",4,-1.3104016,36.8477335,Nairobi,Nairobi/Lower Eastern/Coast,72780,April,Samuel Mbithi
+2021-04-21,2:00.09PM,"S.K.A., Nairobi South, Nairobi",4,-1.2962437,36.8400581,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-21,1:22.45PM,"2, Nanyuki Road, Industrial Area",4,-1.3071997,36.8645484,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-21,12:56.27AM,"14, Nanyuki Road, Industrial Area",4,-1.3069224,36.866566,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-21,12:59.07AM,"2, Nanyuki Road, Industrial Area",4,-1.3071997,36.8645484,Nairobi,Nairobi/Lower Eastern/Coast,658963,April,Samuel Mbithi
+2021-04-22,1:50.34PM,"Unnamed Road, Matuu, Machakos County",4,-1.1489916,37.547007,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-23,2:54.54PM,"90100, Mbolu Malu Road, Machakos",4,-1.5186875,37.2691706,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-23,3:05.24PM,"Mbolu Malu Road, Machakos, Machakos County",4,-1.5179676,37.2660856,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-23,2:54.54PM,"90100, Mbolu Malu Road, Machakos",4,-1.5186875,37.2691706,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-23,12:34.20AM,"Unnamed Road, Machakos County, Kenya",4,-1.4411922,37.0478138,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-23,2:31.54PM,"90100, Mbolu Malu Road, Machakos",4,-1.5186875,37.2691706,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-24,12:08.30AM,"Don Bosco Church, Nairobi, Nairobi County",4,-1.337394,36.7293301,Nairobi,Nairobi/Lower Eastern/Coast,62580,April,Samuel Mbithi
+2021-04-24,12:43.55AM,"Don Bosco Church, Nairobi, Nairobi County",4,-1.337394,36.7293301,Nairobi,Nairobi/Lower Eastern/Coast,829800,April,Samuel Mbithi
+2021-04-24,12:15.37AM,"Don Bosco Church, Nairobi, Nairobi County",4,-1.337394,36.7293301,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-24,11:20.52AM,"Langata Road, Nairobi, Nairobi County",4,-1.3237969,36.7075586,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-24,11:31.25AM,"Karen/Karen Shopping Centre, Nairobi, Nairobi County",4,-1.3236877,36.708262,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-26,2:23.05PM,"45, Lunga Lunga Road, Industrial Area",4,-1.3076509,36.8702196,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-30,11:58.28AM,"Makutano - Kitui Road, Machakos, Machakos County",4,-1.5182026,37.2619313,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-04-30,10:50.51AM,"Machakos-Kangundo Road, Machakos, Machakos County",4,-1.5176693,37.2642723,Nairobi,Nairobi/Lower Eastern/Coast,0,April,Samuel Mbithi
+2021-05-03,12:20.39AM,"X37G+Q6, Thika, Kiambu County",5,-1.035528,37.0755005,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,12:06.02AM,"Haile Selassie Road, Thika, Kiambu County",5,-1.0316201,37.0728978,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,4:41.54PM,"2, Kimathi Street, Nairobi Central",5,-1.2823533,36.8214158,Nairobi,Nairobi/Lower Eastern/Coast,10000,May,Samuel Mbithi
+2021-05-03,12:04.21AM,"25, Mama Ngina Drive, Thika",5,-1.032555,37.0734038,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,09:01.40AM,"Nairobi, Ruai, Nairobi County",5,-1.2545477,36.9866678,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,11:38.11AM,"General Kago Road, Thika, Kiambu County",5,-1.046751,37.0858034,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,09:26.29AM,"Nairobi, Ruai, Nairobi County",5,-1.2545477,36.9866678,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,09:43.06AM,"Nairobi, Ruai, Nairobi County",5,-1.2545477,36.9866678,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,09:43.06AM,"Nairobi, Ruai, Nairobi County",5,-1.2545477,36.9866678,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,09:26.29AM,"Nairobi, Ruai, Nairobi County",5,-1.2545477,36.9866678,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,10:29.06AM,"Garissa Road, Thika, Kiambu County",5,-1.0558278,37.1138807,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-03,10:54.18AM,"A3, Kiambu County, Kenya",5,-1.0623172,37.1668336,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-04,2:12.56PM,"Don Bosco Church, Nairobi, Nairobi County",5,-1.3372549,36.7289113,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-04,1:31.59PM,"Don Bosco Boys Town, Nairobi, Nairobi County",5,-1.3234235,36.7124025,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-05,1:35.27PM,"Kiambu, Kiambu County, Kenya",5,-1.1703325,36.8276369,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-05,1:44.07PM,"Kiambu, Kiambu County, Kenya",5,-1.1703325,36.8276369,Nairobi,Nairobi/Lower Eastern/Coast,15800,May,Samuel Mbithi
+2021-05-05,3:22.38PM,"Limuru Road, Ruaka, Kiambu County",5,-1.207686,36.7864075,Nairobi,Nairobi/Lower Eastern/Coast,14580,May,Samuel Mbithi
+2021-05-05,3:27.18PM,"Limuru Road, Ruaka, Kiambu County",5,-1.207686,36.7864075,Nairobi,Nairobi/Lower Eastern/Coast,125211,May,Samuel Mbithi
+2021-05-05,1:06.42PM,"Kiambu, Kiambu County, Kenya",5,-1.1702879,36.8277314,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-05,12:57.04AM,"Kiambu, Kiambu County, Kenya",5,-1.1702879,36.8277314,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-05,1:03.32PM,"Kiambu, Kiambu County, Kenya",5,-1.1702879,36.8277314,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-07,12:36.20AM,"Likoni Road, Industrial Area, Nairobi",5,-1.3124489,36.8558052,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-07,12:32.13AM,"Likoni Road, Industrial Area, Nairobi",5,-1.3124489,36.8558052,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-07,2:41.46PM,"45, Lunga Lunga Road, Industrial Area",5,-1.3078245,36.8706009,Nairobi,Nairobi/Lower Eastern/Coast,829800,May,Samuel Mbithi
+2021-05-07,10:32.41AM,"100, Kifaru Crescent, Nairobi",5,-1.3078379,36.8272142,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-10,2:46.19PM,"Emali Bus Station, Mombasa Road, Emali",5,-2.0798818,37.4723431,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-10,2:46.19PM,"Emali Bus Station, Mombasa Road, Emali",5,-2.0798818,37.4723431,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-11,2:44.42PM,"Unnamed Road, Voi, Taita-Taveta County",5,-3.3897006,38.5691535,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-11,3:11.08PM,"Unnamed Road, Voi, Taita-Taveta County",5,-3.3922341,38.5609282,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-11,4:14.44PM,"Unnamed Road, Voi, Taita-Taveta County",5,-3.3924094,38.5617083,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-11,4:19.36PM,"Unnamed Road, Voi, Taita-Taveta County",5,-3.3924556,38.5618047,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-11,09:50.31AM,"Kibwezi - Kitui Road, Kibwezi, Makueni County",5,-2.4163232,37.9633956,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-12,11:56.49AM,"Unnamed Road, Wundanyi, Taita-Taveta County",5,-3.4043575,38.3661928,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-12,11:08.01AM,"A23, Mwatate, Taita-Taveta County",5,-3.5035731,38.3778893,Nairobi,Nairobi/Lower Eastern/Coast,22580,May,Samuel Mbithi
+2021-05-12,09:38.46AM,"Unnamed Road, Taita-Taveta County, Kenya",5,-3.3909181,38.5819838,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-12,11:08.01AM,"A23, Mwatate, Taita-Taveta County",5,-3.5035731,38.3778893,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-13,12:25.22AM,"Mombasa Road, Kwakiziwi, Mombasa",5,-4.0421124,39.6587055,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-13,10:58.17AM,"Mombasa, Kilindini, Mombasa County",5,-4.0584061,39.6545843,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-13,11:20.04AM,"Likoni Road, Kinyozi, Mombasa",5,-4.0594364,39.6619337,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-13,12:33.58AM,"Makupa Stage Bus Stop, Mombasa Road, Ziwani",5,-4.0418949,39.6587885,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-14,10:46.48AM,"B8, Mtwapa, Kilifi County",5,-3.9452386,39.7453146,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-15,11:53.50AM,"97401, Lumumba Road, Ziwani",5,-4.0464453,39.6576601,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-15,10:21.01AM,"Bibi Wa Shafi Road, Sidiriya, Mombasa",5,-4.0563036,39.6675318,Nairobi,Nairobi/Lower Eastern/Coast,43580,May,Samuel Mbithi
+2021-05-15,09:40.08AM,"Dar Es Salam Road, Kilindini, Mombasa",5,-4.0584261,39.6547846,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-17,12:49.22AM,"Abdel Nasser Road, Mzizima, Mombasa",5,-4.0542933,39.6729503,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-18,2:16.54PM,"Siku Njema Plaza, Ukunda-Ramisi Road, Ukunda",5,-4.2870161,39.5659434,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-18,2:25.45PM,"Ukunda-Ramisi Road, Ukunda, Kwale County",5,-4.2872236,39.565796,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-18,3:00.52PM,"Ukunda, Kwale County, Kenya",5,-4.2822103,39.567866,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-18,3:47.04PM,"Ukunda, Kwale County, Kenya",5,-4.2822103,39.567866,Nairobi,Nairobi/Lower Eastern/Coast,51840,May,Samuel Mbithi
+2021-05-19,3:00.37PM,"Ukunda-Ramisi Road, Ukunda, Kwale County",5,-4.2770633,39.5674951,Nairobi,Nairobi/Lower Eastern/Coast,25680,May,Samuel Mbithi
+2021-05-19,4:01.37PM,"Likoni-Ukunda Road, Tiwi, Kwale County",5,-4.2221633,39.5806495,Nairobi,Nairobi/Lower Eastern/Coast,15150,May,Samuel Mbithi
+2021-05-19,1:26.38PM,"Ukunda-Ramisi Road, Ukunda, Kwale County",5,-4.2797934,39.5674045,Nairobi,Nairobi/Lower Eastern/Coast,57480,May,Samuel Mbithi
+2021-05-20,3:17.25PM,"C107, Mariakani, Kilifi County",5,-3.8607598,39.4768991,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-20,3:46.28PM,"80374, Mariakani, Kilifi County",5,-3.863967,39.4742458,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-20,08:35.04AM,"B8, Mtwapa, Kilifi County",5,-3.9373807,39.7464168,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-20,12:38.08AM,"Mazeras, Kilifi County, Kenya",5,-3.9644387,39.5503365,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-20,08:45.49AM,"B8, Mtwapa, Kilifi County",5,-3.9494394,39.7449985,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-21,12:59.39AM,"Mombasa Road, Ziwani, Mombasa",5,-4.0462477,39.6616168,Nairobi,Nairobi/Lower Eastern/Coast,36900,May,Samuel Mbithi
+2021-05-21,12:59.39AM,"Mombasa Road, Ziwani, Mombasa",5,-4.0462477,39.6616168,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-21,12:07.33AM,"Mombasa Road, Manyimbo, Mombasa",5,-4.0468037,39.6621954,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-21,11:55.26AM,"Mombasa Road, Ziwani, Mombasa",5,-4.0466057,39.6619209,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-24,1:19.56PM,"B8, Malindi, Kilifi County",5,-3.2219747,40.1124695,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-24,1:05.11PM,"B8, Malindi, Kilifi County",5,-3.2219747,40.1124695,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-25,12:56.59AM,"Motwafi Road, Kwakiziwi, Mombasa",5,-4.042009,39.6588525,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-25,12:14.33AM,"Mombasa, Kikowani, Mombasa County",5,-4.0548675,39.6677302,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-25,10:49.18AM,"Likoni Road, Kinyozi, Mombasa",5,-4.0594464,39.6619367,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-25,10:20.35AM,"Mombasa Road, Sidiriya, Mombasa",5,-4.0544652,39.6674598,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-27,3:15.35PM,"47, Lunga Lunga Road, Industrial Area",5,-1.3076388,36.8701729,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-27,2:56.35PM,"45, Lunga Lunga Road, Industrial Area",5,-1.307654,36.870198,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-27,3:31.58PM,"47, Lunga Lunga Road, Industrial Area",5,-1.3076388,36.8701729,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-27,3:31.58PM,"47, Lunga Lunga Road, Industrial Area",5,-1.3076388,36.8701729,Nairobi,Nairobi/Lower Eastern/Coast,84589,May,Samuel Mbithi
+2021-05-27,3:31.58PM,"47, Lunga Lunga Road, Industrial Area",5,-1.3076388,36.8701729,Nairobi,Nairobi/Lower Eastern/Coast,7800,May,Samuel Mbithi
+2021-05-28,1:11.49PM,"Machakos Bus Stop, Machakos, Eastern",5,-1.5224103,37.2677132,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-05-28,12:30.51AM,"Mbolu Malu Road, Machakos, Machakos County",5,-1.5180381,37.2657275,Nairobi,Nairobi/Lower Eastern/Coast,0,May,Samuel Mbithi
+2021-06-08,2:04.29PM,"Unnamed Road, Thika, Kiambu County",6,-1.0345006,37.0766806,Nairobi,Nairobi/Lower Eastern/Coast,0,June,Samuel Mbithi
+2021-06-08,2:04.29PM,"Unnamed Road, Thika, Kiambu County",6,-1.0345006,37.0766806,Nairobi,Nairobi/Lower Eastern/Coast,15800,June,Samuel Mbithi
+2021-06-08,2:49.50PM,"15, Mama Ngina Drive, Thika",6,-1.034602,37.0734894,Nairobi,Nairobi/Lower Eastern/Coast,0,June,Samuel Mbithi
+2021-06-08,2:49.50PM,"15, Mama Ngina Drive, Thika",6,-1.034602,37.0734894,Nairobi,Nairobi/Lower Eastern/Coast,42500,June,Samuel Mbithi
+2021-06-08,10:58.45AM,"Ruiru, Kiambu County, Kenya",6,-1.1783378,36.984472,Nairobi,Nairobi/Lower Eastern/Coast,0,June,Samuel Mbithi
+2021-06-08,10:05.10AM,"Quickmart, Ruiru, Kiambu County",6,-1.169423,36.9702833,Nairobi,Nairobi/Lower Eastern/Coast,0,June,Samuel Mbithi
+2021-06-08,10:02.24AM,"Quickmart, Ruiru, Kiambu County",6,-1.169423,36.9702833,Nairobi,Nairobi/Lower Eastern/Coast,0,June,Samuel Mbithi
