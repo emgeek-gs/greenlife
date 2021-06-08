@@ -721,11 +721,11 @@ app.layout = html.Div ([
     html.Div ([
         dbc.Row ([
             dbc.Col (
-                html.Img (src='/assets/Layer_x0020_1.png', style={'line-height': '1','display': 'block','height': 'auto', 'width': '60%'}),
+                html.Img (src='/assets/Layer_x0020_1.png', style={'line-height': '1','display': 'block','height': 'auto', 'width': '60%','margin-top': '10px'}),
             width={"size": 2, "order": 1, "offset": 1}),
 
             dbc.Col (
-                html.H1 (children='GREENLIFE ANALYTICS DASHBOARD', style={'text-align': 'center'}),
+                html.H1 (children='GREENLIFE ANALYTICS DASHBOARD', style={'text-align': 'center', 'margin-top': '10px'}),
             width={"size": 3, "order": 2, "offset": 2}),
         ]),
 
@@ -737,7 +737,7 @@ app.layout = html.Div ([
                         html.H4 ('Total Sales TSA ', className="card-title",
                                  style={"text-align": "left", "font-weight": "Heaiver"}),
                         html.P (' Kshs. ' + str (total_amount.astype ('int')), className="card-value",
-                                style={'font-size': '1rem', 'color': 'green'})
+                                style={'font-size': '2rem', 'color': 'green'})
 
                     ])
                 ]),
@@ -748,7 +748,7 @@ app.layout = html.Div ([
                             html.H4 ('Total Sales Deliveries ', className="card-title",
                                      style={"text-align": "left", "font-weight": "Heaiver"}),
                             html.P ('Kshs. ' + str (total_amount.astype ('int')), className="card-value",
-                                    style={'font-size': '1rem', 'color': 'green'}),
+                                    style={'font-size': '2rem', 'color': 'green'}),
                         ])
                     ]),
                     width={"size": 3, "order": 2}),
@@ -758,13 +758,13 @@ app.layout = html.Div ([
                         html.H4 ('Total Sales Public Health ', className="card-title",
                                  style={"text-align": "left", "font-weight": "Heaiver"}),
                         html.P ('Kshs.' + str (total_public_health.astype ('int')), className="card-value",
-                                style={'font-size': '1rem', 'color': 'green'}),
+                                style={'font-size': '2rem', 'color': 'green'}),
                     ])
                 ]),
                     width={"size": 3, "order": 3}),
 
             ],
-                style={'padding': '25px'},
+                style={'padding': '25px', 'margin-top': '40px'},
                 className="mb-4"),
         ]),
 
@@ -788,7 +788,7 @@ app.layout = html.Div ([
                             figure=fig7,
                             config={'displayModeBar': False})
 
-                    ], style={'display': 'inline-block'}
+                    ], style={'display': 'inline-block', 'margin-top': '40px'}
                     ),
                     width={"size": 3, "order": 1}),
 
@@ -797,7 +797,7 @@ app.layout = html.Div ([
                     html.Div (children=[
 
                         dcc.Graph (figure=fig1, config={'displayModeBar': False})
-                    ], style={'display': 'inline-block'}
+                    ], style={'display': 'inline-block', 'margin-top': '50px'}
                     ),
                     width={"size": 3, "order": 2, "offset": 3}),
 
@@ -825,7 +825,7 @@ app.layout = html.Div ([
 
                         dcc.Graph (figure=fig8, config={'displayModeBar': False})
 
-                    ], style={'display': 'inline-block'}),
+                    ], style={'display': 'inline-block', 'margin-top': '50px'}),
                     width={"size": 3, "order": 1}),
 
                 # second column of second row
@@ -833,7 +833,7 @@ app.layout = html.Div ([
                     html.Div (children=[
 
                         dcc.Graph (figure=fig4, config={'displayModeBar': False})
-                    ], style={'display': 'inline-block'}),
+                    ], style={'display': 'inline-block', 'margin-top': '50px'}),
                     width={"size": 3, "order": 2, "offset": 3}),
 
             ]),
@@ -861,7 +861,7 @@ app.layout = html.Div ([
 
                         dcc.Graph (figure=fig2, config={'displayModeBar': False})
 
-                    ], style={'display': 'inline-block'}),
+                    ], style={'display': 'inline-block', 'margin-top': '50px'}),
                     width={"size": 3, "order": 1}),
 
                 # second column of second row
@@ -869,7 +869,7 @@ app.layout = html.Div ([
                     html.Div (children=[
 
                         dcc.Graph (figure=fig3, config={'displayModeBar': False})
-                    ], style={'display': 'inline-block'}),
+                    ], style={'display': 'inline-block', 'margin-top': '50px'}),
                     width={"size": 3, "order": 2, "offset": 3}),
             ],
             ),
