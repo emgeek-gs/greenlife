@@ -741,7 +741,8 @@ app.layout = html.Div ([
 
                     ])
                 ]),
-                    width={"size": 3, "order": "first", "offset": 1}),
+                    style={'box-shadow': '0 4px 8px 0 rgba(0,0,0,0.2)', 'border-radius': '25px', 'margin-bottom': '10px'},
+                    width={"order": "first", "offset": 1}),
                 dbc.Col (
                     dbc.Card ([
                         dbc.CardBody (children=[
@@ -751,7 +752,8 @@ app.layout = html.Div ([
                                     style={'font-size': '2rem', 'color': 'green'}),
                         ])
                     ]),
-                    width={"size": 3, "order": 2}),
+                    style={'box-shadow': '0 4px 8px 0 rgba(0,0,0,0.2)', 'border-radius': '25px', 'margin-bottom': '10px'},
+                    width={"order": 2}),
 
                 dbc.Col (dbc.Card ([
                     dbc.CardBody (children=[
@@ -761,10 +763,11 @@ app.layout = html.Div ([
                                 style={'font-size': '2rem', 'color': 'green'}),
                     ])
                 ]),
-                    width={"size": 3, "order": 3}),
+                    style={'box-shadow': '0 4px 8px 0 rgba(0,0,0,0.2)', 'border-radius': '25px', 'margin-bottom': '10px'},
+                    width={"order": 3}),
 
             ],
-                style={'padding': '25px', 'margin-top': '40px'},
+                style={'padding': '30px', 'margin-top': '40px', 'column-gap': '200px'},
                 className="mb-4"),
         ]),
 
